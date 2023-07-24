@@ -1,0 +1,467 @@
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/Poppins-Regular.ttf") format(".ttf");
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+
+
+
+/* stying part of the header */
+header {
+    z-index: 1000;
+    height: 30vh;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+    background: #124a5eff;
+    /* background: rgb(255, 255, 255); */
+    /* background: url("../images/tech_bg2.jpg"); */
+    background-size: cover;
+    /* background-position: center; */
+}
+
+.shrink {
+    height: 15vh;
+    transition: 0.3s;
+}
+
+header #logo {
+    margin: 5px;
+    width: 10em;
+    padding: 50px;
+    transition: 2s;
+    display: flex;
+}
+
+.logoReduce {
+    transition: 2s;
+    width: 5em;
+    height: 5em;
+}
+
+.logoPart {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 2;
+    /* background: rgba(242, 255, 0, 0.129); */
+}
+
+div #co_name {
+    /* color: rgb(0, 0, 0); */
+    color: white;
+    font-size: 1.5em;
+    font-weight: 500;
+    text-align: center;
+}
+
+header nav {
+    flex: 2.5;
+}
+
+nav ul {
+    list-style: none;
+    padding: 5px;
+    display: flex;
+    float: right;
+}
+
+nav ul li a {
+    text-decoration: none;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+/* nav ul li {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+} */
+
+nav ul li:hover a {
+    /* background: rgba(18, 74, 94, 0.274); */
+    background-color: #e6953cff;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    transition: 200ms;
+}
+
+/* styling the hero part */
+.hero {
+    padding-top: 30vh;
+    display: flex;
+    flex-direction: row;
+    background: url("../images/tech_bg2.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    transition: background-image 2s ease-in-out;
+    align-items: center;
+}
+
+/* Styling for the outer circle */
+.outer-circle {
+    margin: 50px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    /* Make it a circle */
+    background-color: rgba(230, 148, 60, 0.279);
+    /* Change to your desired color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.middle-circle {
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    background-color: #124a5eff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+
+/* Styling for the inner circle */
+.inner-circle {
+    width: 80%;
+    /* Make it a bit smaller than the outer circle */
+    height: 80%;
+    /* Make it a bit smaller than the outer circle */
+    border-radius: 50%;
+    /* Make it a circle */
+    background-color: #ffffff;
+    /* Change to your desired color */
+}
+
+.innovate .text {
+    font-size: 100px;
+    font-weight: 900;
+}
+
+/* 
+.hero1{
+    flex: 1;
+    background: url("../images/tech_bg2.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    transition: background-image 2s ease-in-out;
+    margin: 10px;
+    border-radius: 5px;
+}
+.hero2{
+    flex: 1;
+    background: url("../images/tech_bg1.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    transition: background-image 2s ease-in-out;
+    margin: 10px;
+    border-radius: 5px;
+} */
+
+div .one {
+    flex: 1;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.one button {
+    position: absolute;
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    cursor: pointer;
+    background: rgb(0, 0, 0);
+    color: white;
+    border: 1px solid white;
+    left: 0;
+}
+
+.three button {
+    position: static;
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    cursor: pointer;
+    background: rgb(0, 0, 0);
+    color: white;
+    border: 1px solid white;
+    right: 0;
+}
+
+div .two {
+    flex: 5;
+}
+
+div .three {
+    flex: 1;
+}
+
+/* .hero h1{
+    margin: 50px;
+    padding: 10px;
+} */
+
+/* styling the main part */
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Stylize the main part of the side */
+
+.side-main {
+    flex: 1;
+    margin: 5px;
+    border-radius: 5px;
+    /* background: rgba(18, 74, 94, 0.274); */
+    outline: 1px solid #124a5eff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    margin: 5px;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    height: 150px;
+    background: #124a5eff;
+    padding: 5px;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.title h1 {
+    align-items: center;
+    padding-left: 13%;
+    color: white;
+}
+
+.side-main .side-content {
+    margin: 10px;
+    flex: 10;
+}
+
+div .title .small-logo {
+    width: 80px;
+}
+
+
+/* end of Stylize the main part of the side */
+
+.side-main .title {
+    flex: 1;
+}
+
+/* Styling main part of the main part */
+.main2 {
+    flex: 4;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    /* background: rgba(18, 74, 94, 0.274); */
+    /* height: 100vh; */
+}
+
+.news {
+    margin: 10px;
+    padding: 10px;
+    /* overflow-x: scroll; */
+    /* text-align: center; */
+}
+
+.news .news-head {
+    text-align: center;
+    margin: 10px;
+}
+
+.news .news-content {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+    flex-wrap:wrap;
+}
+
+/* .news-content::after{
+    content:"";
+    width: 25em;
+    padding: 10px;
+    margin: 10px;
+} */
+
+.news-part {
+    display: inline-block;
+    /* margin: 30px; */
+    padding: 10px;
+    width: 25em;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.newsImage {
+    height: 350px;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.newsImage:hover{
+    cursor: pointer;
+    z-index: -1;
+    filter: brightness(0.7);
+    transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.news-text{
+    padding: 10px;
+    /* border: 1px solid black; */
+    border-radius: 0 0 10px 10px;
+    transition: 0.3s ease;
+}
+
+.news-text .headline{
+    font-weight: bolder;
+    font-size: large;
+    cursor: pointer;
+    color: rgb(0, 51, 255);
+}
+
+.news-text .headline:hover{
+    text-decoration: underline;
+}
+
+#news-detail{
+    color: rgb(0, 0, 0);
+    transition: 0.3s ease;
+}
+
+.news-detail{
+    display: none;
+}
+
+.news-text .headline:hover .news-detail
+{
+    color: red;
+    display: block;
+}
+
+.events {
+    text-align: center;
+}
+
+.resources {
+    text-align: center;
+}
+
+.gallery {
+    text-align: center;
+}
+
+
+
+/* Styling main part of the main part */
+
+/* 
+.main3 {
+    flex: 1;
+    margin: 5px;
+    border-radius: 5px;
+    background: rgba(18, 74, 94, 0.274);
+    height: 100vh;
+} */
+
+/* styling the footer part */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background: rgb(73, 73, 73);
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+    font-size: large;
+}
+.copyright{
+    color: white;
+    margin: auto 0 0;
+    font-weight: 600;   
+}
+
+
+/*----------------------------------------------------------
+Styling news_detail.html*/
+
+#news_detailImage{
+    border-radius: 1em;
+    width: 50em;
+}
+
+.newsDetailText{
+    display: flex;
+    flex-direction: column;
+}
+
+.newsDetailText .newsDetail{
+    width: 60em;
+}
+
+.newsDetailText .newsDetail::selection{
+    background: #e6953cff;
+    color: white;
+}
+
+.newsDate{
+    display: flex;
+    flex-direction: row;
+    padding: 1em;
+    align-items: center;
+}
+
+.newsDate .dateIcon{
+    margin: 1em;
+}
+
+.side_main .prev_button{
+    border-radius: 3em;
+    border: 0;
+    margin: 1em;
+    background: none;
+}
+
+.prev_button img{
+    margin: 1em;
+    cursor: pointer;
+}
+
+/*Styling news_detail.html
+----------------------------------------------------------*/
+@media screen and (max-width: 480px) {}

@@ -21,9 +21,11 @@
 //     }
 // }
 
+
+
 function appear(clickedHeadline) {
     const newsDetail = clickedHeadline.nextElementSibling; // Get the sibling news-detail element
-
+    
     if (newsDetail.style.display === "none") {
         newsDetail.style.display = "block";
     } else {

@@ -21,9 +21,10 @@ header {
     flex-direction: row;
     align-items: center;
     position: fixed;
-    background: #124a5eff;
+    /* background: #124a5eff; */
+    background: rgb(18, 83, 94);
     /* background: rgb(255, 255, 255); */
-    /* background: url("../images/tech_bg2.jpg"); */
+    /* background: url("../images/tech_bg1.jpg"); */
     background-size: cover;
     /* background-position: center; */
 }
@@ -58,9 +59,10 @@ header #logo {
 div #co_name {
     /* color: rgb(0, 0, 0); */
     color: white;
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: 500;
     text-align: center;
+    width: 500px;
 }
 
 header nav {
@@ -77,23 +79,32 @@ nav ul {
 nav ul li a {
     text-decoration: none;
     margin: 10px;
-    padding: 10px;
+    padding: 5px;
     border-radius: 5px;
     color: white;
 }
+nav li{
+    display: flex;
+    flex-direction: row;
+}
 
-/* nav ul li {
-    margin: 10px;
-    padding: 10px;
-    border-radius: 5px;
-} */
 
-nav ul li:hover a {
+nav ul li:hover{
     /* background: rgba(18, 74, 94, 0.274); */
-    background-color: #e6953cff;
+    background-color: rgba(230, 148, 60, 0.585);
     color: rgb(0, 0, 0);
     font-weight: bolder;
     transition: 200ms;
+    border-radius: 5px;
+}
+li img:hover{
+    cursor: pointer;
+}
+
+/*------------------------------------*/
+
+.page_nav{
+    z-index: 999;
 }
 
 /* styling the hero part */
@@ -464,4 +475,65 @@ Styling news_detail.html*/
 
 /*Styling news_detail.html
 ----------------------------------------------------------*/
+
+
+/*Styling about page*/
+
+.about{
+    padding-top: 30vh;
+    padding-bottom: 30vh;   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background: url("../images/tech_bg1.jpg"); */
+    
+}
+.about_title{
+    padding: 15px;
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+
+.about_content{
+    padding: 30Spx;
+    width: 50%;
+    max-width: 1000px;
+}
+
+.content-detail{
+    /* border: 1px solid black; */
+    /* border-radius: 30px; */
+    margin-bottom: 50px;
+    padding: 10%;
+    transition: 1s;
+    opacity: 0;
+}
+
+.content-detail:nth-child(even){
+    transform: translateX(30%);
+    border-right:2px solid rgb(51, 148, 153);
+    border-radius: 30px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(51, 148, 153, 0.236));
+    /* background-color: rgba(51, 148, 153, 0.236); */
+}
+
+.content-detail:nth-child(odd){
+    transform: translateX(-30%);
+    border-left: 2px solid rgb(255, 199, 31);
+    border-radius: 30px;
+    background-image: linear-gradient(to right, rgba(255, 199, 31, 0.236), rgba(255, 255, 255, 0));
+    /* background-color: rgba(255, 199, 31, 0.236); */
+}
+
+.about_content_title{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    padding: 10px;
+}
+
+/*Styling about page*/
+
+
 @media screen and (max-width: 480px) {}

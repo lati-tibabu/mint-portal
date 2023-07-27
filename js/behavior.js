@@ -9,3 +9,27 @@ window.addEventListener("scroll", function () {
     logo.classList.remove("logoReduce");
   }
 });
+
+
+// /* About page scroller*/
+
+// const news_container = document.getElementById("about_content");
+// const content_detail = news_container.querySelector(".content-detail");
+
+// function showNestedDivsOnScroll() {
+//   const scrollPosition = outerDiv.scrollTop + outerDiv.clientHeight;
+//   const totalScrollHeight = outerDiv.scrollHeight;
+  
+//   // Calculate the height at which you want to start showing the nested divs
+//   const showThreshold = totalScrollHeight - 100; // Adjust the threshold as needed
+  
+//   if (scrollPosition >= showThreshold) {
+//     nestedDivs.forEach((div) => {
+//       div.style.opacity = '1';
+//       div.style.display = 'block';
+//     });
+//   }
+// }
+
+// // Attach the scroll event listener to the outer div
+// outerDiv.addEventListener('scroll', showNestedDivsOnScroll);

@@ -4,133 +4,24 @@
 }
 
 
+:root {
+    --color1: rgba(255, 228, 196, 0.608);
+    --color2: rgba(255, 194, 120, 0.711);
+}
+
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins';
+    font-family:  'Poppins';
 }
 
 
-
-/* stying part of the header */
-header {
-    z-index: 1000;
-    height: 30vh;
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    align-items: center;
-    position: fixed;
-    background: #124a5eff;
-    background: rgba(255, 255, 255, 0.56);
-    backdrop-filter: blur(3px);
-    /* background: rgb(18, 83, 94); */
-    /* background: rgb(255, 255, 255); */
-    /* background: url("../images/tech_bg1.jpg"); */
-    background-size: cover;
-    /* background-position: center; */
-}
-
-/**scroll up header effect**/
-
-.shrink {
-    height: 15vh;
-    transition: 0.3s;
-}
-
-.logoReduce {
-    width: 5em;
-    height: 5em;
-    transition: 2s;
-}
-
-/**scroll up header effect**/
-
-header #logo {
-    margin: 5px;
-    width: 10em;
-    padding: 50px;
-    transition: 2s;
-    display: flex;
-}
-
-.logoPart {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex: 2;
-    /* color: black; */
-    /* background: rgba(242, 255, 0, 0.129); */
-}
-
-/**scroll up header effect**/
-
-
-div #co_name {
-    /* color: rgb(0, 0, 0); */
-    /* color: white; */
-    font-size: 1.2em;
-    font-weight: 500;
-    text-align: center;
-    width: 500px;
-    font-weight: bolder;
-}
-
-/**scroll up header effect**/
-
-
-.mint_name_shrink{
-    transition: 0.7s;
-    /* font-size: 0.8rem; */
-    /* background-color: rebeccapurple; */
-}
-
-/**scroll up header effect**/
-
-header nav {
-    flex: 2.5;
-}
-
-nav ul {
-    list-style: none;
-    padding: 5px;
-    display: flex;
-    float: right;
-}
-
-nav ul li a {
-    text-decoration: none;
-    margin: 10px;
-    padding: 5px;
-    border-radius: 5px;
-    color: black;
-    /* color: white; */
-}
-
-nav li {
-    display: flex;
-    flex-direction: row;
-}
-
-nav ul li:hover {
-    /* background: rgba(18, 74, 94, 0.274); */
-    background-color: rgba(230, 148, 60, 0.585);
-    /* background-color: rgba(65, 65, 65, 0.585); */
-    color: rgb(0, 0, 0);
-    font-weight: bolder;
-    transition: 200ms;
-    border-radius: 5px;
-}
-
-li img:hover {
-    cursor: pointer;
-}
 
 /*------------------------------------*/
 
-.page_nav {
+/* .page_nav {
     z-index: 999;
-}
+} */
 
 /* styling the hero part */
 .hero {
@@ -145,6 +36,7 @@ li img:hover {
     flex-direction: row;
     transition: background-image 2s ease-in-out;
     align-items: center;
+    position: relative;
 }
 
 /* Styling for the outer circle */
@@ -153,9 +45,7 @@ li img:hover {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    /* Make it a circle */
     background-color: rgba(230, 148, 60, 0.279);
-    /* Change to your desired color */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -176,13 +66,9 @@ li img:hover {
 /* Styling for the inner circle */
 .inner-circle {
     width: 80%;
-    /* Make it a bit smaller than the outer circle */
     height: 80%;
-    /* Make it a bit smaller than the outer circle */
     border-radius: 50%;
-    /* Make it a circle */
     background-color: #ffffff;
-    /* Change to your desired color */
 }
 
 .innovate .text {
@@ -190,33 +76,7 @@ li img:hover {
     font-weight: 900;
 }
 
-/* 
-.hero1{
-    flex: 1;
-    background: url("../images/tech_bg2.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 70vh;
-    display: flex;
-    flex-direction: row;
-    transition: background-image 2s ease-in-out;
-    margin: 10px;
-    border-radius: 5px;
-}
-.hero2{
-    flex: 1;
-    background: url("../images/tech_bg1.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 70vh;
-    display: flex;
-    flex-direction: row;
-    transition: background-image 2s ease-in-out;
-    margin: 10px;
-    border-radius: 5px;
-} */
-
-div .one {
+/* div .one {
     flex: 1;
     height: 100vh;
     display: flex;
@@ -254,7 +114,7 @@ div .two {
 
 div .three {
     flex: 1;
-}
+} */
 
 /* .hero h1{
     margin: 50px;
@@ -271,15 +131,17 @@ main {
 /* Stylize the main part of the side */
 
 .side-main {
+    border: 1px solid black;
     flex: 1;
     margin: 5px;
     border-radius: 5px;
-    /* background: rgba(18, 74, 94, 0.274); */
-    outline: 1px solid #124a5eff;
-    height: 100vh;
+    /* height: 100vh; */
+    height: fit-content;
     display: flex;
     flex-direction: column;
+    position: sticky;
 }
+
 
 .title {
     margin: 5px;
@@ -299,9 +161,49 @@ main {
     color: white;
 }
 
-.side-main .side-content {
+.side-content {
+    /* background-color: #124a5eff; */
+    padding: 10px;
     margin: 10px;
     flex: 10;
+}
+.side-content li{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.221);
+}
+
+.side-content-title{
+    background-color: whitesmoke;
+    /* border: 1px solid rgb(160, 160, 160); */
+    height: 60px;
+    border-radius: 60px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.side-content p{
+    font-size: 0.8rem;
+}
+
+.fa-play{
+    color: var(--color2);
+}
+.side-content ul{
+    list-style: none;
+}
+
+.side-content p:hover{
+    color: rgb(12, 48, 119);
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 div .title .small-logo {
@@ -314,6 +216,16 @@ div .title .small-logo {
 .side-main .title {
     flex: 1;
 }
+
+
+
+/* Page styling */
+
+.page{
+    padding-top: 30vh;
+}
+
+/* Page styling */
 
 /* Styling main part of the main part */
 .main2 {
@@ -533,7 +445,14 @@ Styling news_detail.html*/
     position: absolute;
 }
 
-.about_title, .event_title {
+/* .about_title,
+.event_title {
+    padding: 15px;
+    font-size: 2.5rem;
+    font-weight: bolder;
+} */
+
+.page_name {
     padding: 15px;
     font-size: 2.5rem;
     font-weight: bolder;
@@ -605,11 +524,11 @@ Styling news_detail.html*/
 /*Styling event page*/
 
 
-.events{
+.events {
     padding-top: 30vh;
 }
 
-.event{
+.event {
     /* background-color: #124a5eff; */
     margin: 10px;
     padding: 10px;
@@ -619,7 +538,7 @@ Styling news_detail.html*/
     border: 1px solid black;
 }
 
-.upcoming .upcoming_title{
+.upcoming .upcoming_title {
     text-align: left;
     padding-left: 20%;
     padding-bottom: 50px;
@@ -629,14 +548,14 @@ Styling news_detail.html*/
     font-weight: bold;
 }
 
-.bi-chevron-right{
+.bi-chevron-right {
     fill: rgb(0, 0, 0);
     fill-rule: nonzero;
     width: 20px;
     padding: -20px;
 }
 
-.upcoming_event_content{
+.upcoming_event_content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -649,7 +568,7 @@ Styling news_detail.html*/
 
 }
 
-.event-details{
+.event-details {
     padding: 30px;
     display: flex;
     flex-direction: row;
@@ -663,25 +582,28 @@ Styling news_detail.html*/
     /* background-image: linear-gradient(to right, rgba(255, 199, 31, 0.236), rgba(255, 255, 255, 0)); */
 }
 
-.event-details:nth-child(even){
+.event-details:nth-child(even) {
     transform: translateX(100px);
 }
+
 /* 
 .event-details:hover{
     width: 85%;
     transition: 0.5s;
 } */
 
-.upcoming-event-photo{
+.upcoming-event-photo {
     border-radius: 10px;
     width: 400px;
     height: 400px;
     object-fit: cover;
 }
-.event_icon_photo{
+
+.event_icon_photo {
     width: 100px;
 }
-.event_icon{
+
+.event_icon {
     padding: 0;
     /* width: 100px; */
     z-index: -999;
@@ -691,42 +613,42 @@ Styling news_detail.html*/
 
 
 
-.upcoming-event-photo:hover{
+.upcoming-event-photo:hover {
     filter: brightness(70%);
     transition: 1s;
     cursor: pointer;
 }
 
-.event-image:hover
-.event_icon{
+.event-image:hover .event_icon {
     cursor: pointer;
     transform: translateY(-250px);
     opacity: 1;
     transition: 1s;
 }
 
-.event-content-text{
+.event-content-text {
     text-align: left;
     padding: 10px;
     display: flex;
     flex-direction: column;
 }
 
-.event_headline_text{
+.event_headline_text {
     font-size: 1.5rem;
     font-weight: bold;
     text-decoration: underline;
     cursor: pointer;
 }
 
-.upcoming_event_time{
+.upcoming_event_time {
     padding: 10px;
 }
 
-.upcoming_event_time .event_date{
+.upcoming_event_time .event_date {
     font-weight: bold;
     color: green;
 }
+
 /*Styling event page*/
 
 @media screen and (max-width: 480px) {}

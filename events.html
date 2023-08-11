@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Event</title>
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/event_styles.css">
 </head>
 
 <body>
@@ -16,7 +17,7 @@
     <div class="events">
 
         <div class="page_name event_title">
-            Event
+            Events
         </div>
 
         <div class="event_content">
@@ -24,118 +25,296 @@
             <div class="event upcoming">
 
                 <div class="upcoming_title">
+                    <i class="fa-solid fa-circle"></i>
                     Upcoming events
-                    <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-chevron-right" viewBox="0 0 16 16">
                         <path fill-rule="evenodd"
                             d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
                     </svg>
                     <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-chevron-right" viewBox="0 0 16 16">
                         <path fill-rule="evenodd"
                             d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
-                    </svg>
+                    </svg> -->
                 </div>
                 <div class="upcoming_event_content">
+
                     <div class="event-details">
-
-
                         <div class="event-image">
                             <img src="images/tech_bg1.jpg" alt="" class="upcoming-event-photo">
-                            <div class="event_icon">
-                                <img src="logo/icons/event_icons.png" alt="" class="event_icon_photo">
-                            </div>
+                        </div>
+
+                        <div class="event-icon">
+                            <i class="fa-solid fa-calendar"></i>
                         </div>
 
                         <div class="event-content-text">
                             <div class="event_headline_text">
-                                Lorem Ipsum Dolor Sit Amet
+                                Augmented Reality: Bridging the Digital and Physical Worlds
                             </div>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit sequi, iusto modi
-                                voluptatibus
-                                id quae? Rerum reprehenderit consequatur repellendus ipsum et enim, fuga doloribus nisi,
-                                illum aliquam a animi doloremque. Lorem ipsum dolor sit amet consectetur adipisicing
-                                elit.
-                                Quis incidunt illum iure ullam perferendis! Magni accusamus veniam incidunt aliquam ab
-                                dolor
-                                temporibus. Placeat saepe consequatur alias perspiciatis, ipsum maiores enim.
-                            </p>
 
                             <div class="upcoming_event_time">
                                 <div class="event_date">
-                                    Jul 28, 2023
+                                    Sep 10, 2023
                                 </div>
                                 <div class="event_time">
-                                    8:50 AM
+                                    3:00 PM
                                 </div>
                             </div>
 
+                            <i class="fa-solid fa-chevron-right" onclick="view_event(this)"></i>
+
+                            <p>
+                                Explore the exciting world of Augmented Reality (AR) and its transformative potential.
+                                Learn how AR
+                                is revolutionizing various industries, from gaming to healthcare and beyond. Join us for
+                                hands-on
+                                demonstrations and expert insights into this cutting-edge technology.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="event-details">
+                        <div class="event-image">
+                            <img src="https://img.freepik.com/free-photo/people-carrying-light-bulb-icons_53876-30639.jpg?w=996&t=st=1691135803~exp=1691136403~hmac=5d969674288074500acf50c6de11402fad32b8a20c1f96ce388a818d822deda5"
+                                alt="" class="upcoming-event-photo">
+                        </div>
+
+                        <div class="event-icon">
+                            <i class="fa-solid fa-calendar"></i>
+                        </div>
+
+                        <div class="event-content-text">
+                            <div class="event_headline_text">
+                                Blockchain and Cryptocurrencies: The Future of Finance
+                            </div>
+
+                            <div class="upcoming_event_time">
+                                <div class="event_date">
+                                    Sep 20, 2023
+                                </div>
+                                <div class="event_time">
+                                    11:30 AM
+                                </div>
+                            </div>
+
+                            <p>
+                                Join us for an in-depth discussion on the impact of blockchain and cryptocurrencies on
+                                the
+                                financial landscape. Discover the potential of decentralized finance and how digital
+                                currencies
+                                are reshaping the global economy. Don't miss out on this opportunity to understand the
+                                future of
+                                finance.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="event-details">
+                        <div class="event-image">
+                            <img src="https://img.freepik.com/free-photo/women-shopping-fruit-market_181624-41912.jpg?w=900&t=st=1691135861~exp=1691136461~hmac=539d018d11331733aceb0ce12c5365dbdc2bab98fab452521729d94a2cb1ef62"
+                                alt="" class="upcoming-event-photo">
+                        </div>
+                        <div class="event-icon">
+                            <i class="fa-solid fa-calendar"></i>
+                        </div>
+
+                        <div class="event-content-text">
+                            <div class="event_headline_text">
+                                Space Exploration: Journey to the Stars
+                            </div>
+
+                            <div class="upcoming_event_time">
+                                <div class="event_date">
+                                    Oct 5, 2023
+                                </div>
+                                <div class="event_time">
+                                    7:00 PM
+                                </div>
+                            </div>
+
+                            <p>
+                                Embark on a thrilling adventure through space exploration. Learn about the latest
+                                discoveries in
+                                astronomy, space missions, and the potential for human colonization of other planets.
+                                Our
+                                passionate speakers will share their insights and visions for the future of space
+                                exploration.
+                            </p>
                         </div>
                     </div>
 
                     <div class="event-details">
                         <div class="event-image">
                             <img src="images/tech_bg1.jpg" alt="" class="upcoming-event-photo">
-                            <div class="event_icon">
-                                <img src="logo/icons/event_icons.png" alt="" class="event_icon_photo">
-                            </div>
                         </div>
+
+                        <div class="event-icon">
+                            <i class="fa-solid fa-calendar"></i>
+                        </div>
+
                         <div class="event-content-text">
                             <div class="event_headline_text">
-                                Lorem Ipsum Dolor Sit Amet
+                                Quantum Computing: Unleashing Computational Power
                             </div>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit sequi, iusto modi
-                                voluptatibus
-                                id quae? Rerum reprehenderit consequatur repellendus ipsum et enim, fuga doloribus nisi,
-                                illum aliquam a animi doloremque. Lorem ipsum dolor sit amet consectetur adipisicing
-                                elit.
-                                Quis incidunt illum iure ullam perferendis! Magni accusamus veniam incidunt aliquam ab
-                                dolor
-                                temporibus. Placeat saepe consequatur alias perspiciatis, ipsum maiores enim.
-                            </p>
+
                             <div class="upcoming_event_time">
                                 <div class="event_date">
-                                    Jul 28, 2023
+                                    Oct 15, 2023
                                 </div>
                                 <div class="event_time">
-                                    8:50 AM
+                                    2:00 PM
                                 </div>
                             </div>
+
+                            <p>
+                                Delve into the realm of quantum computing and its potential to revolutionize computing
+                                as we know
+                                it. Learn about qubits, quantum algorithms, and how this technology can solve complex
+                                problems
+                                that are beyond the capabilities of classical computers. Don't miss this glimpse into
+                                the future of
+                                computation.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="event-details">
+                        <div class="event-image">
+                            <img src="https://img.freepik.com/free-photo/global-communication_53876-89014.jpg?w=1060&t=st=1691138397~exp=1691138997~hmac=d48ba3ce548e80301bcb4730ea11e7a18bca638a4803f7ab2818824865cb203f"
+                                alt="" class="upcoming-event-photo">
+                        </div>
+
+                        <div class="event-icon">
+                            <i class="fa-solid fa-calendar"></i>
+                        </div>
+
+                        <div class="event-content-text">
+                            <div class="event_headline_text">
+                                Cybersecurity in the Age of AI
+                            </div>
+
+                            <div class="upcoming_event_time">
+                                <div class="event_date">
+                                    Oct 28, 2023
+                                </div>
+                                <div class="event_time">
+                                    11:00 AM
+                                </div>
+                            </div>
+
+                            <p>
+                                Explore the evolving landscape of cybersecurity with the integration of artificial
+                                intelligence.
+                                Discover how AI is both a weapon and a defense against cyber threats. Join experts as
+                                they discuss
+                                the challenges and opportunities in securing the digital world.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="event-details">
+                        <div class="event-image">
+                            <img src="https://img.freepik.com/free-photo/women-shopping-fruit-market_181624-41912.jpg?w=900&t=st=1691135861~exp=1691136461~hmac=539d018d11331733aceb0ce12c5365dbdc2bab98fab452521729d94a2cb1ef62"
+                                alt="" class="upcoming-event-photo">
+                        </div>
+
+                        <div class="event-icon">
+                            <i class="fa-solid fa-calendar"></i>
+                        </div>
+
+                        <div class="event-content-text">
+                            <div class="event_headline_text">
+                                The Internet of Things (IoT) Revolution
+                            </div>
+
+                            <div class="upcoming_event_time">
+                                <div class="event_date">
+                                    Nov 5, 2023
+                                </div>
+                                <div class="event_time">
+                                    3:30 PM
+                                </div>
+                            </div>
+
+                            <p>
+                                Join us as we explore the fascinating world of the Internet of Things (IoT). Learn how
+                                connected
+                                devices are reshaping industries like healthcare, transportation, and smart cities.
+                                Discover the
+                                challenges and potentials of a hyper-connected future.
+                            </p>
                         </div>
                     </div>
 
                     <div class="event-details">
                         <div class="event-image">
                             <img src="images/tech_bg1.jpg" alt="" class="upcoming-event-photo">
-                            <div class="event_icon">
-                                <img src="logo/icons/event_icons.png" alt="" class="event_icon_photo">
-                            </div>
                         </div>
+
+                        <div class="event-icon">
+                            <i class="fa-solid fa-calendar"></i>
+                        </div>
+
                         <div class="event-content-text">
                             <div class="event_headline_text">
-                                Lorem Ipsum Dolor Sit Amet
+                                Human-Machine Collaboration: Building the Future Together
                             </div>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit sequi, iusto modi
-                                voluptatibus
-                                id quae? Rerum reprehenderit consequatur repellendus ipsum et enim, fuga doloribus nisi,
-                                illum aliquam a animi doloremque. Lorem ipsum dolor sit amet consectetur adipisicing
-                                elit.
-                                Quis incidunt illum iure ullam perferendis! Magni accusamus veniam incidunt aliquam ab
-                                dolor
-                                temporibus. Placeat saepe consequatur alias perspiciatis, ipsum maiores enim.
-                            </p>
+
                             <div class="upcoming_event_time">
                                 <div class="event_date">
-                                    Jul 28, 2023
+                                    Nov 20, 2023
                                 </div>
                                 <div class="event_time">
-                                    8:50 AM
+                                    10:00 AM
                                 </div>
                             </div>
+
+                            <p>
+                                Explore the possibilities of human-machine collaboration. From AI-assisted creativity to
+                                robot
+                                co-workers, this event will delve into how humans and machines can work together to
+                                achieve greater
+                                efficiency and innovation.
+                            </p>
                         </div>
                     </div>
+
+                    <div class="event-details">
+                        <div class="event-image">
+                            <img src="https://img.freepik.com/free-photo/people-carrying-light-bulb-icons_53876-30639.jpg?w=996&t=st=1691135803~exp=1691136403~hmac=5d969674288074500acf50c6de11402fad32b8a20c1f96ce388a818d822deda5"
+                                alt="" class="upcoming-event-photo">
+                        </div>
+
+                        <div class="event-icon">
+                            <i class="fa-solid fa-calendar"></i>
+                        </div>
+
+                        <div class="event-content-text">
+                            <div class="event_headline_text">
+                                Future of Transportation: From Electric Vehicles to Hyperloop
+                            </div>
+
+                            <div class="upcoming_event_time">
+                                <div class="event_date">
+                                    Dec 5, 2023
+                                </div>
+                                <div class="event_time">
+                                    1:00 PM
+                                </div>
+                            </div>
+
+                            <p>
+                                Join us for a thrilling exploration of the future of transportation. From electric
+                                vehicles to
+                                Hyperloop technology, we'll discuss the innovations that are shaping the way we travel.
+                                Prepare to
+                                be amazed by the possibilities!
+                            </p>
+                        </div>
+                    </div>
+
                 </div>
+
 
             </div>
 
@@ -145,6 +324,7 @@
 
     </div>
     <script src="js/behavior.js"></script>
+    <script src="js/event_behavior.js"></script>
 </body>
 
 </html>

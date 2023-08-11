@@ -78,6 +78,7 @@ nav ul {
 }
 
 .nav-links {
+    transition: 0.3s;
     text-decoration: none;
     margin: 10px;
     padding: 5px;
@@ -86,9 +87,11 @@ nav ul {
     /* font-size: 1.2rem; */
 }
 
+
 nav li {
     display: flex;
     flex-direction: row;
+    /* font-size: small; */
 }
 
 nav ul li:hover {
@@ -98,6 +101,12 @@ nav ul li:hover {
     transition: 200ms;
     border-radius: 5px;
 }
+
+/* .navLinkShrink{
+    padding: 1px;
+    font-size: small;
+} */
+
 
 li img:hover {
     cursor: pointer;
@@ -143,3 +152,7 @@ li img:hover {
     /* height: auto; */
 }
 
+.navLinkShrink{
+    padding: 1px;
+    font-size: small;
+}

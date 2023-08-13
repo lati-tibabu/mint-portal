@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: 'Open Sans';
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        button{
+            padding: 10px;
+            font-size: 2rem;
+            text-transform: lowercase;
+            border: none;
+            cursor: pointer;
+            margin: 10px;
+            border-radius: 10px;
+            width: 100px;
+            transition: 200ms;
+        }
+
+        button:hover{
+            background-color: rgb(80, 80, 80);
+            color: white;
+        }
+        .container{
+            width: 70%;
+            height: 70vh;
+            background: rgb(0, 136, 255);
+            /* background-blend-mode: multiply; */
+            border-radius: 40px;
+            padding: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow-x: hidden;
+        }
+
+        .header h1{
+            color: white;
+        }
+
+        .contain{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: 200ms;
+        }
+
+        .one{
+            background-color: rgba(240, 248, 255, 0.347);
+            /* border: 3px solid orange; */
+            border-radius: 20px;
+            transform: translateX(50%);
+        }
+
+        .two{
+            background-color: rgba(255, 223, 128, 0.347);
+            /* border: 3px solid orange; */
+            border-radius: 20px;
+            transform: translateX(100%);
+            /* display: none; */
+        }
+        
+        
+        .main{
+            background-color: whitesmoke;
+            box-shadow: 0 0 0px 15px rgba(255, 255, 255, 0.637);
+            width: 450px;
+            height: 300px;
+            border-radius: 10px;
+            margin-left: 30px;
+            margin-right: 30px;
+            margin-bottom: 30px;
+        }
+
+        .content{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="buttons">
+        <button onclick="one_btn()">One</button>
+        <button onclick="two_btn()">Two</button>
+    </div>
+    <div class="container">
+        <div class="contain one" id="one">
+            <div class="header">
+                <h1>One</h1>
+            </div>
+            <div class="main">
+                <div class="content">
+                    this is slider one
+                </div>
+            </div>
+        </div>
+        <div class="contain two" id="two">
+            <div class="header">
+                <h1>Two</h1>
+            </div>
+            <div class="main">
+                <div class="content">
+                    this is slider two
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function one_btn() {
+            const containerOne = document.getElementById("one");
+            const containerTwo = document.getElementById("two");
+
+            containerOne.style.transform = "translateX(50%)";
+            containerTwo.style.transform = "translateX(100%)";
+            // containerTwo.style.display = "none";
+            // containerOne.style.display = "flex";
+        }
+        function two_btn() {
+            const containerOne = document.getElementById("one");
+            const containerTwo = document.getElementById("two");
+
+            containerTwo.style.transform = "translateX(-50%)";
+            containerOne.style.transform = "translateX(-100%)";
+            // containerOne.style.display = "none";
+            // containerTwo.style.display = "flex";
+        }
+    </script>
+</body>
+</html>

@@ -9,6 +9,7 @@ header {
     position: fixed;
     background: rgba(255, 255, 255, 0.79);
     backdrop-filter: blur(30px);
+    gap: 10px;
 }
 
 /**scroll up header effect**/
@@ -28,45 +29,54 @@ header {
 
 
 .logoPart {
+    /* flex: 2; */
+    width: 30%;
     /* background-color: aquamarine; */
+    transition: 1s;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    flex: 2;
-    padding: 0;
+    justify-content: left;
+    padding: 20px;
 }
 #logo {
     /* margin: 5px; */
-    width: 20%;
+    width: 8rem;
     padding: 5px;
     transition: 2s;
-    display: flex;
+    /* background-color: red; */
+    /* display: flex; */
 }
 
 /**scroll up header effect**/
 
 
 #co_name {
+    /* background-color: red; */
+    width: 50%;
     /* background-color: rebeccapurple; */
-    font-size: 1rem;
+    font-size: 0.7rem;
     font-weight: 500;
     text-align: center;
-    width: 500px;
+    /* width: 500px; */
     font-weight: bolder;
+    transition: 1s;
 }
 
 /**scroll up header effect**/
 
 
 .mint_name_shrink{
+    font-size: 0.3rem;
     transition: 0.7s;
 }
 
 /**scroll up header effect**/
 
 nav {
-    flex: 3;
+    float: right;
+    /* flex: 8; */
+    /* background-color: aliceblue; */
 }
 
 nav ul {

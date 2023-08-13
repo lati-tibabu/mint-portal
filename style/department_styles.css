@@ -1,0 +1,76 @@
+.page_name{
+    padding-top: 30vh;
+}
+.department{
+    /* background-color: red; */
+    margin: 30px;
+    padding: 20px;
+}
+
+.department-category-name{
+    /* padding-bottom: 20px; */
+    /* font-size: 2rem; */
+    font-weight: 400;
+}
+
+.personal-photo img{
+    width:450px;
+    border-radius: 30px;    
+}
+
+.department-personals{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.personal-name{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+.personal-info hr{
+    /* width: 100px; */
+    height: 2px;
+    border-radius: 10px;
+    background-color: black;
+}
+.personal-detail{
+    padding-top: 10px;
+    font-size: 0.8rem;
+    font-family: 'Open Sans';
+    font-style: italic;
+}
+
+.department-personals{
+    /* background-color: beige; */
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+
+
+.personals:not(.minister){
+    display: none;
+    flex-direction: column;
+    background-color: aliceblue;
+}
+
+.fa-chevron-right{
+    /* color: red; */
+    cursor: pointer;
+    /* padding: 10px; */
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.fa-chevron-right:hover + .personals{
+    display: flex;
+}
+
+.fa-chevron-right:active{
+    background-color: rgba(128, 128, 128, 0.17);
+}

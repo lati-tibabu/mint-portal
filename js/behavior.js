@@ -3,12 +3,15 @@ window.addEventListener("scroll", function () {
   const logo = document.getElementById("logo");
   const co_name = document.getElementById("co_name");
   const ulElement = document.getElementById("nav-links");
+  const logoPart = document.getElementById("logoPart");
   const nestedNavLinks = ulElement.querySelectorAll("li .nav-links");
 
   if (window.scrollY > 0) {
     header.classList.add("shrink");
     logo.classList.add("logoReduce");
     co_name.classList.add("mint_name_shrink");
+    logoPart.style.flexDirection = "row";
+    // co_name.style.display = "none";
 
     nestedNavLinks.forEach(link => {
       // link.innerHTML = "hello";
@@ -18,6 +21,10 @@ window.addEventListener("scroll", function () {
     header.classList.remove("shrink");
     logo.classList.remove("logoReduce");
     co_name.classList.remove("mint_name_shrink");
+    logoPart.style.flexDirection = "column";
+
+    // co_name.style.display = "block";
+
     nestedNavLinks.forEach(link => {
       // link.innerHTML = "hello";
       link.classList.remove("navLinkShrink")

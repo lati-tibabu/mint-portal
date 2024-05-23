@@ -1,0 +1,322 @@
+/* @font-face {
+    font-family: "Poppins";
+    src: url("../../fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("../../fonts/OpenSans-Regular.ttf");
+} */
+
+* {
+    font-family: Poppins;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper {
+    /* background-color: rebeccapurple; */
+    background: url('../../images/tech_bg2.jpg');
+    min-height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    margin: 0;
+}
+
+.form-box {
+    border-radius: 15px;
+    /* background-color: rgb(219, 219, 219); */
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 15px 0 rgba(128, 128, 128, 0.315);
+    /* border: 1px solid white; */
+    width: 50%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.form-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-box input {
+    /* width: 100%;     */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+
+.role-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+
+.role-box div {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.input-field {
+    width: 100%;
+}
+
+.role-box span {
+    font-size: large;
+    font-weight: bold;
+}
+
+#role {
+    /* background-color: red; */
+    /* width: ; */
+    background-color: transparent;
+    font-size: large;
+    text-transform: capitalize;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-box i {
+    font-size: 1.5rem;
+    padding-right: 10px;
+    color: rgb(81, 81, 81)
+}
+
+.form-box h2 {
+    font-size: 2rem;
+    color: rgb(42, 42, 42);
+}
+
+.remember-forgoten {
+    display: flex;
+    flex-direction: row;
+    /* width: fit-content; */
+
+    /* background-color: aliceblue; */
+}
+
+.form-box button {
+    padding: 10px;
+    border: none;
+    font-size: large;
+    /* color: #124a5eff;
+    background-color: #e6953cff; */
+
+    color: #e6953cff;
+    background-color: #124a5eff;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+
+    &:hover {
+        box-shadow: 0 0 10px 0 rgba(73, 73, 73, 0.299);
+    }
+}
+
+
+#logo {
+    width: 100px;
+}
+
+.logo-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-login div {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
+.roles {
+    /* background-color: rebeccapurple; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.role-card {
+    background-color: #124a5eff;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    min-width: 80px;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 80px;
+    padding: 10px;
+    overflow: hidden;
+    transition: ease-in-out 0.1s;
+    opacity: 0.8;
+    gap: 5px;
+}
+
+.role-card:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.role-card p {
+    display: flex;
+    flex-direction: row;
+    transition: ease-in-out 0.1s;
+}
+
+.role-card p span {
+    display: flex;
+    flex-direction: row;
+    width: 0px;
+    height: 20px;
+    overflow: hidden;
+    transition: ease-in-out 0.1s;
+}
+
+.role-card:hover span {
+    width: fit-content;
+}
+
+.role-card:active {
+    border: 1px solid black;
+}
+
+.close-page {
+    width: 80px;
+    height: 80px;
+    background-color: #124a5eff;
+    /* border: 7px solid rgb(255, 0, 0); */
+    border-radius: 50%;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.fa-chevron-left {
+    font-size: 3.6rem;
+    /* color: rgb(255, 255, 255); */
+    color: #e6953cff;
+}
+
+@media screen and (max-width: 760px) {
+    .form-box {
+        width: 95%;
+        padding: 0;
+        justify-content: space-around;
+        height: min-content;
+        margin-top: 30px;
+        /* background-color: #124a5eff; */
+    }
+
+    .form-box form {
+        font-family: 'Open Sans';
+        font-size: 0.8rem;
+    }
+
+    .roles {
+        flex-direction: column;
+    }
+
+    .role-card {
+        font-size: 1rem;
+        font-weight: bold;
+        width: 100%;
+        height: 30px;
+        min-height: 30px;
+        border-radius: 10px;
+        padding: 10px;
+        /* background-color: blanchedalmond; */
+    }
+
+    .role-card:hover {
+        cursor: pointer;
+        opacity: 1;
+    }
+
+    .role-card p {
+        display: flex;
+        flex-direction: row;
+        transition: ease-in-out 0.1s;
+    }
+
+    .role-card p span {
+        display: flex;
+        flex-direction: row;
+        width: fit-content;
+        height: 20px;
+        overflow: hidden;
+        transition: ease-in-out 0.1s;
+    }
+
+    .role-card:hover span {
+        width: fit-content;
+    }
+
+    .role-card:active {
+        border: 1px solid black;
+    }
+
+    .close-page {
+        width: 30px;
+        height: 30px;
+        background-color: #124a5eff;
+        /* border: 7px solid rgb(255, 0, 0); */
+        border-radius: 50%;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        cursor: pointer;
+    }
+
+    .fa-chevron-left {
+        font-size: 1.5rem;
+        /* color: rgb(255, 255, 255); */
+        color: #e6953cff;
+    }
+
+    .logo-login div {
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+}

@@ -1,0 +1,407 @@
+Folder PATH listing
+Volume serial number is 1AAA-C36E
+C:.
+¦   .hintrc
+¦   about.html
+¦   announcement.html
+¦   announcement.php
+¦   desk.php
+¦   documents.html
+¦   documents.php
+¦   e-services.php
+¦   events.html
+¦   events.php
+¦   event_content.php
+¦   footer.html
+¦   footer.php
+¦   header.html
+¦   header.php
+¦   home.html
+¦   home.php
+¦   index.html
+¦   mint-portal.txt
+¦   mvv.php
+¦   news.html
+¦   news.php
+¦   news_content.html
+¦   news_content.php
+¦   news_detail.php
+¦   offices.php
+¦   online-application.php
+¦   resources.html
+¦   sectors.html
+¦   sectors.php
+¦   vacancy-application.php
+¦   vacancy.html
+¦   vacancy.php
+¦   vacancy_detail.html
+¦   vacancy_detail.php
+¦   
++---.vscode
+¦       settings.json
+¦       
++---admin-content
+¦   ¦   header.html
+¦   ¦   index.html
+¦   ¦   index.php
+¦   ¦   index2.php
+¦   ¦   login.php
+¦   ¦   
+¦   +---cms-pages
+¦   ¦       2news.html
+¦   ¦       announcements.php
+¦   ¦       application-detail.php
+¦   ¦       desks.php
+¦   ¦       document-manager-checker.php
+¦   ¦       documents.php
+¦   ¦       edit_items.html
+¦   ¦       edit_items_announcement.php
+¦   ¦       edit_items_desk.php
+¦   ¦       edit_items_document.php
+¦   ¦       edit_items_events.php
+¦   ¦       edit_items_history.php
+¦   ¦       edit_items_news.php
+¦   ¦       edit_items_office.php
+¦   ¦       edit_items_personnel.php
+¦   ¦       edit_items_sector.php
+¦   ¦       edit_items_vacancy.php
+¦   ¦       event copy.php
+¦   ¦       event.php
+¦   ¦       header_2.html
+¦   ¦       header_2.php
+¦   ¦       history.php
+¦   ¦       home.php
+¦   ¦       human-resource-checker.php
+¦   ¦       news.php
+¦   ¦       offices.php
+¦   ¦       personnel.php
+¦   ¦       public-relation-checker.php
+¦   ¦       sectors.php
+¦   ¦       session-checker.php
+¦   ¦       vacancy-form.html
+¦   ¦       vacancy.php
+¦   ¦       vacancy_applications.php
+¦   ¦       
+¦   +---js
+¦   ¦       admin-news-loader.js
+¦   ¦       adminHeader.js
+¦   ¦       content-loader.js
+¦   ¦       
+¦   +---styles
+¦           content-manage-style.css
+¦           edit_items_style.css
+¦           header_style.css
+¦           login_styles.css
+¦           style.css
+¦           
++---back_end
+¦   ¦   add_history.php
+¦   ¦   admin-login.php
+¦   ¦   admin-logout.php
+¦   ¦   announcement-edit-post.php
+¦   ¦   config.php
+¦   ¦   delete-announcement copy.php
+¦   ¦   delete-announcement.php
+¦   ¦   delete-document.php
+¦   ¦   delete-events.php
+¦   ¦   delete-history.php
+¦   ¦   delete_application.php
+¦   ¦   delete_desk.php
+¦   ¦   delete_news.php
+¦   ¦   delete_office.php
+¦   ¦   delete_personnel.php
+¦   ¦   delete_sector.php
+¦   ¦   desk-edit-post.php
+¦   ¦   desk-post.php
+¦   ¦   document-edit-post.php
+¦   ¦   event-edit-post.php
+¦   ¦   event-post.php
+¦   ¦   history-edit-post.php
+¦   ¦   news-edit-post.php
+¦   ¦   news-post.php
+¦   ¦   office-edit-post.php
+¦   ¦   office-post.php
+¦   ¦   personnel-edit-post.php
+¦   ¦   personnel-upload.php
+¦   ¦   post_announcement.php
+¦   ¦   publish_events.php
+¦   ¦   sector-edit-post.php
+¦   ¦   sector-post.php
+¦   ¦   unpublish_events.php
+¦   ¦   upload-document.php
+¦   ¦   vacancy-application.php
+¦   ¦   vacancy-edit-post.php
+¦   ¦   vacancy-post.php
+¦   ¦   
+¦   +---document
+¦   ¦       64fa0b4addceb.pdf
+¦   ¦       64fed0add5c37.php
+¦   ¦       64fed45f31c61.pdf
+¦   ¦       64fee39dbb667.pdf
+¦   ¦       64fee54eaeb54.txt
+¦   ¦       
+¦   +---images
+¦   ¦   ¦   64d7241cb17a7.jpg
+¦   ¦   ¦   64d7248eb2502.jpg
+¦   ¦   ¦   64d725c2b0fef.jpg
+¦   ¦   ¦   64d72647e22a7.jpg
+¦   ¦   ¦   64d728c5c07b3.jpg
+¦   ¦   ¦   64d7298a6d291.jpg
+¦   ¦   ¦   64d82f9dd3944.jpg
+¦   ¦   ¦   64d858e612f85.jpg
+¦   ¦   ¦   64d858fb2f306.jpg
+¦   ¦   ¦   64d8591902e70.jpg
+¦   ¦   ¦   64d8594751d0b.jpg
+¦   ¦   ¦   64d859f311e5e.jpg
+¦   ¦   ¦   64d85a435e60d.jpg
+¦   ¦   ¦   64d85a9fe338a.jpg
+¦   ¦   ¦   64d85bbcee6ae.jpg
+¦   ¦   ¦   64d85bf5735f0.jpg
+¦   ¦   ¦   64d88302c6da1.jpg
+¦   ¦   ¦   64d88b355ed65.jpg
+¦   ¦   ¦   64d8a61e7f889.jpg
+¦   ¦   ¦   64d9b8aea428a.jpg
+¦   ¦   ¦   64da0257b4221.jpg
+¦   ¦   ¦   64dbd604a200c.jpeg
+¦   ¦   ¦   64dc40076d09a.jpg
+¦   ¦   ¦   64dc4249ab354.jpg
+¦   ¦   ¦   64dc7e7230784.jpg
+¦   ¦   ¦   64dc7f7b1803c.jpg
+¦   ¦   ¦   64dc81b2f2dd7.jpg
+¦   ¦   ¦   64df5167ed829.jpg
+¦   ¦   ¦   64df51a91730d.jpg
+¦   ¦   ¦   64df51d3919d2.jpg
+¦   ¦   ¦   64df521877798.jpg
+¦   ¦   ¦   64df6e439730a.jpg
+¦   ¦   ¦   64df983d71994.jfif
+¦   ¦   ¦   64e89c941d49c.jpg
+¦   ¦   ¦   64e9b03b0b7c9.jpg
+¦   ¦   ¦   64ea08446ab77.jpg
+¦   ¦   ¦   64ecbe2519ed5.jpg
+¦   ¦   ¦   64f1cf74693cd.jfif
+¦   ¦   ¦   64f1cfd732f80.jpg
+¦   ¦   ¦   64f226823a036.png
+¦   ¦   ¦   64f587216a9bd.jpg
+¦   ¦   ¦   64f822ea46097.jpg
+¦   ¦   ¦   64fa1263e0f5a.jpg
+¦   ¦   ¦   64fa130225206.jpg
+¦   ¦   ¦   64fcbaa0e0b9b.jpeg
+¦   ¦   ¦   64fd67e21e1f4.jpg
+¦   ¦   ¦   64fd7157f1356.jpg
+¦   ¦   ¦   64fd71b64d18b.jpg
+¦   ¦   ¦   64fd7218691e2.jpg
+¦   ¦   ¦   64fd7c038f2ac.jpg
+¦   ¦   ¦   64fd7ed23be58.jpg
+¦   ¦   ¦   64fd83630a60f.jpg
+¦   ¦   ¦   64fdd23280fc4.jpg
+¦   ¦   ¦   64fefe233200a.jpg
+¦   ¦   ¦   64fefe4dbc67b.jpg
+¦   ¦   ¦   event64fd6e8eab41b.jpg
+¦   ¦   ¦   event64fd6eb5775bb.jpg
+¦   ¦   ¦   event64fd6f343ab38.jpg
+¦   ¦   ¦   
+¦   ¦   +---event
+¦   ¦           64dc429ac41b1.jpg
+¦   ¦           64dc43efc0b86.jpg
+¦   ¦           64dc509964a56.jpg
+¦   ¦           64dc872b2201a.jpg
+¦   ¦           64dc87a6b51ff.jpg
+¦   ¦           64dc907f48864.png
+¦   ¦           64dca53342043.jpg
+¦   ¦           64df4dad66eb1.jpg
+¦   ¦           64df4fcdddef4.png
+¦   ¦           64df5014b1228.png
+¦   ¦           64df50156236a.png
+¦   ¦           64df50ed9bbad.jpg
+¦   ¦           64df56d37f631.png
+¦   ¦           64df570d941a5.png
+¦   ¦           64df575996cb1.png
+¦   ¦           64df58e410fd3.jpg
+¦   ¦           64e850ce56ce0.jpg
+¦   ¦           64fa13ce1a91e.jpg
+¦   ¦           64fc4ad5e14fe.jpg
+¦   ¦           64fc52fe73c48.jpg
+¦   ¦           64fc542aeb211.jpg
+¦   ¦           64fc54e993a90.jpg
+¦   ¦           64fc5564d9348.jpg
+¦   ¦           64fc70d36d72c.jpg
+¦   ¦           64fc72fd30c43.jpg
+¦   ¦           64fc751e89c70.jpg
+¦   ¦           64fc7dd15e1c9.jpg
+¦   ¦           64fc7ecb40822.jpg
+¦   ¦           64fc9c68a39c6.jpg
+¦   ¦           64fcaa309f7fd.jpg
+¦   ¦           64fcaa6a213e5.jpg
+¦   ¦           64fcab6cd51d8.jpeg
+¦   ¦           64fcab9692caf.jpeg
+¦   ¦           64fd4aaf73aad.jfif
+¦   ¦           64fd4ad7a155d.jfif
+¦   ¦           64fd70454c0ab.jpg
+¦   ¦           64fd7061220bd.jpg
+¦   ¦           64fd708467973.jpg
+¦   ¦           64fd70f6ecca6.jpg
+¦   ¦           64fd84876e399.jpg
+¦   ¦           64fd84c2a11e3.jpg
+¦   ¦           64fd86d15dd77.jpg
+¦   ¦           64ff00263b63c.jpg
+¦   ¦           
+¦   +---personnel_images
+¦   ¦       64f8332ec1a9b.jfif
+¦   ¦       64f8342e205d4.jfif
+¦   ¦       64fa150613404.webp
+¦   ¦       64fa183058fd7.jpg
+¦   ¦       64fa1856c620c.jpg
+¦   ¦       64fabed3430a9.webp
+¦   ¦       64fded1d9fd70.jpg
+¦   ¦       64fded47b2c3e.jpg
+¦   ¦       64fdeda1d089a.jpg
+¦   ¦       64fdee308530d.jpg
+¦   ¦       64feac2227544.jpg
+¦   ¦       64feacec081d2.jpg
+¦   ¦       64feadcf3acc9.jpg
+¦   ¦       64feadf992081.jpg
+¦   ¦       64feaed4e91b4.jpg
+¦   ¦       64febaaddb0f2.jpg
+¦   ¦       64fef86f92894.webp
+¦   ¦       64ff01786eba6.jpg
+¦   ¦       64ff01d59a2b8.jpg
+¦   ¦       
+¦   +---sector_images
+¦   ¦       64f4ed7b87c41.jfif
+¦   ¦       64f5844668baf.jpg
+¦   ¦       64f821cf78a19.jpg
+¦   ¦       64f857aa1fff8.jpg
+¦   ¦       64fddc995482a.jpg
+¦   ¦       64fddcfa1aa11.jpg
+¦   ¦       
+¦   +---uploads
+¦           64f0ce719fcf2.pdf
+¦           64f0ce719fd12.pdf
+¦           64f0ce719fd23.jfif
+¦           64f0d49c8b4e5.pdf
+¦           64f0d49c8b512.pdf
+¦           64f0d49c8b530.jpg
+¦           64f1a7ed37a62.pdf
+¦           64f1a7ed37a72.pdf
+¦           64f1a7ed37a78.jpg
+¦           64f1b8fd918a8.pdf
+¦           64f1b8fd918be.pdf
+¦           64f1b8fd918c4.jfif
+¦           64f1bb97e82e3.docx
+¦           64f1bb97e8330.docx
+¦           64f1bb97e8359.jpg
+¦           64f1bba530322.docx
+¦           64f1bba530336.docx
+¦           64f1bba53033c.jpg
+¦           64f1bc10db182.docx
+¦           64f1bc10db192.docx
+¦           64f1bc10db19b.jpg
+¦           64f1c010b4196.pdf
+¦           64f1c010b41a6.pdf
+¦           64f1c010b41ad.png
+¦           64f1c040f1eba.pdf
+¦           64f1c040f1ece.pdf
+¦           64f1c040f1ed6.jpg
+¦           64f1c09535a78.docx
+¦           64f1c0967314b.docx
+¦           64f1c0967315f.docx
+¦           64f1c09673167.jpg
+¦           64f1e0c793c40.pdf
+¦           64f1e0c793c58.pdf
+¦           64f1e0c793c63.png
+¦           64f212fff32dc.pdf
+¦           64f212fff337b.pdf
+¦           64f212fff3382.jpg
+¦           64f361c8966d8.pdf
+¦           64f361c89672d.pdf
+¦           64f362019ab05.pdf
+¦           64f36201ad25d.pdf
+¦           64f36201ad28c.png
+¦           Abebe_cover_letter64f1a30269bda.docx
+¦           Abebe_photo64f1a30269bdf.png
+¦           Abebe_resume64f1a30269ba2.docx
+¦           gifti_cover_letter64f1a0bfa3d4c.pdf
+¦           gifti_photo64f1a0bfa3d56.jpg
+¦           gifti_resume64f1a0bfa3d3e.pdf
+¦           Laticover_letter64f0d9a1e2b06.pdf
+¦           Laticover_letter64f0dcd068319.pdf
+¦           Latiphoto64f0d9a1e2b0e.jfif
+¦           Latiphoto64f0dcd068322.jfif
+¦           Latiresume64f0d9a1e2af3.pdf
+¦           Latiresume64f0dcd068305.pdf
+¦           
++---content-pages
++---fonts
+¦       OpenSans-Regular.ttf
+¦       Poppins-Regular.ttf
+¦       
++---images
+¦   ¦   1691684880415.jfif
+¦   ¦   mint_bg1.jpg
+¦   ¦   news1.jpg
+¦   ¦   news2.jpg
+¦   ¦   news3.jpg
+¦   ¦   news4.jpg
+¦   ¦   news5.jpg
+¦   ¦   news6.jpg
+¦   ¦   news7.jpg
+¦   ¦   photo2.jpg
+¦   ¦   tech_bg2.jpg
+¦   ¦   
+¦   +---background
+¦   ¦       data-server-racks-hub-room-with-big-data-computer-center-blue-interior-hosting-storage-hardware.jpg
+¦   ¦       
+¦   +---news_image
+¦           spinal_ai.jpeg
+¦           
++---js
+¦       aboutLoader.js
+¦       about_scroll.js
+¦       anima.js
+¦       behavior.js
+¦       bg_slider.js
+¦       bg_slider2.js
+¦       event_behavior.js
+¦       footer.js
+¦       header.js
+¦       menu_resp_behavior.js
+¦       news.js
+¦       news_loader.js
+¦       show_menu.js
+¦       
++---logo
+¦   ¦   mint_logo.png
+¦   ¦   mint_logo_circle.png
+¦   ¦   mint_logo_circle.svg
+¦   ¦   mint_logo_file.svg
+¦   ¦   
+¦   +---icons
+¦           arrow-left-circle-fill.svg
+¦           arrow_down.svg
+¦           calendar-date-fill.svg
+¦           chevron-right.svg
+¦           download.svg
+¦           event_icons.png
+¦           
++---style
+¦       announcement_style.css
+¦       department_styles.css
+¦       document_styles.css
+¦       event_styles.css
+¦       header_styles.css
+¦       news_styles.css
+¦       sector_styles.css
+¦       style.css
+¦       style_index.css
+¦       vacancy_styles.css
+¦       
++---test-site
+    ¦   cms.html
+    ¦   file_upl.html
+    ¦   index.html
+    ¦   process-form.php
+    ¦   slider.html
+    ¦   style.css
+    ¦   styles.css
+    ¦   
+    +---images

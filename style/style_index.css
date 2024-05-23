@@ -1,0 +1,55 @@
+:root{
+    --dimension1: 180px;
+    --dimension2: 200px;
+    --dimension3: 300px;
+    --color1: rgba(255, 228, 196, 0.608);
+    --color2: rgba(255, 194, 120, 0.711);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mint-logo {
+    width: var(--dimension1);
+    /* background-color: bisque; */
+    border-radius: 50%;
+    background: none;
+    /* position: absolute; */
+    /* z-index: -99; */
+}
+
+/* .outer-circle {
+
+    width: var(--dimension3);
+    height: var(--dimension3);
+    background-color: var(--color1);
+    border-radius: 50%;
+    position: absolute;
+    z-index: -99;
+    
+}
+
+.inner-circle {
+    width: var(--dimension2);
+    height: var(--dimension2);
+    background-color: var(--color2);
+    border-radius: 50%;
+    position: absolute;
+    z-index: -99;
+} */
+
+.fa-solid{
+    position: absolute;
+    font-size: 16rem;
+    color: var(--color2)
+}

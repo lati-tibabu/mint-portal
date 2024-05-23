@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/content-manage-style.css">
+</head>
+
+<body>
+
+    <div id="adminHeader"></div>
+    <script src="../js/adminHeader.js"></script>
+
+    <main id="main">
+        <div class="container">
+            <div class="header">
+                <!-- <ul>
+                    <li><a href="" onclick="post_news()">Post News</a></li>
+                    <li><a href="" onclick="manage_news()">Manage News</a></li>
+                </ul> -->
+                <h1><i class="fa-regular fa-newspaper"></i>Vacancy</h1>
+                <div class="buttons">
+                    <button onclick="post()"></i><i class="fa-solid fa-plus"></i>Post Vacancy</button>
+                    <button onclick="manage()"><i class="fa-solid fa-gear"></i>Manage Vacancies</button>
+                </div>
+            </div>
+            <div class="main-news-page">
+                <div class="news-page post-news" id="post-news">
+                    <form action="../../../mint-portal/back_end/news-post.php" method="post"
+                        enctype="multipart/form-data">
+                        <div>
+                            <span>Job Title</span>
+                            <input name="job-title" class="headline" type="text" placeholder="Job Title" required><br>
+                        </div>
+
+                        <div>
+                            <span>Department/Division</span>
+                            <input name="department-division" class="headline" type="text"
+                                placeholder="Department/Division" required><br>
+                        </div>
+
+                        <div>
+                            <span>Location</span>
+                            <input name="location" class="headline" type="text" placeholder="Location" required><br>
+                        </div>
+
+                        <div>
+                            <span>Application Deadline</span><input name="deadline" class="headline" type="date"
+                                required><br>
+                        </div>
+
+                        <div>
+                            <span>Job Description</span>
+                            <textarea name="job-description" id="job-description" cols="70" rows="6" autocomplete="off"
+                                placeholder="Job Description" required></textarea><br>
+                        </div>
+
+                        <div>
+                            <span>Job Responsibility</span>
+                            <textarea name="responsibiliy" id="responsibility" cols="70" rows="6" autocomplete="off"
+                                placeholder="Job Responsibilities" required></textarea><br>
+                        </div>
+
+                        <div>
+                            <span>Qualifications/Requirements</span>
+                            <textarea name="qualification" id="qualification" cols="70" rows="6" autocomplete="off"
+                                placeholder="Job Qualification and Requirements" required></textarea><br>
+                        </div>
+
+                        <div>
+                            <span>Preferred Skills (if any)</span>
+                            <textarea name="skills" id="skills" cols="70" rows="6" autocomplete="off"
+                                placeholder="Preferred Skills" required></textarea><br>
+                        </div>
+
+                        <div>
+                            <span>Application Instructions</span>
+                            <textarea name="instruction" id="instruction" cols="70" rows="6" autocomplete="off"
+                                placeholder="Application Instructions" required></textarea><br>
+                        </div>
+
+                        <div>
+                            <span>Benefits (if applicable)</span>
+                            <textarea name="benefits" id="benefits" cols="70" rows="6" autocomplete="off"
+                                placeholder="Benefits" required></textarea><br>
+                        </div>
+
+                        <div>
+                            <span>Company Overview (brief)</span>
+                            <textarea name="co-overview" id="co-overview" cols="70" rows="6" autocomplete="off"
+                                placeholder="Company Overview" required></textarea><br>
+                        </div>
+
+                        <input type="submit" name="submit" id="submit" value="Upload Article">
+                        <!-- <button type="submit">Upload Article</button> -->
+                    </form>
+
+                    <!-- <a href="../../back_end/document/"></a> -->
+                </div>
+
+                <div class="news-page manage-news" id="manage-news">
+                    <h1>Manage News</h1>
+                    <div class="news-list">
+
+                        <?php
+                        include("../../back_end/config.php");
+                        $query = "SELECT * FROM news;";
+
+                        $result = mysqli_query($con, $query);
+
+                        $data = array();
+
+                        $count = 0;
+
+                        if (mysqli_num_rows($result) > 0) {
+                            while ($row = mysqli_fetch_assoc($result)) {
+                                $data[] = $row;
+                                $count = $count + 1;
+                            }
+                        }
+                        if ($count != 0) {
+
+                            for ($i = $count - 1; $i >= 0; $i--) {
+                                echo '<div class="news">';
+                                echo '    <div class="news-image">';
+                                echo '        <img src="../../back_end/images/' . $data[$i]['news_image'] . '" alt="" srcset="">';
+                                echo '    </div>';
+                                echo '    <div class="news-headline">';
+                                echo '            <p>' . $data[$i]['news_headline'] . '</p>';
+                                // echo '        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, suscipit quaerat.</p>';
+                                echo '        <div class="date">';
+                                echo '<i class="fa-solid fa-calendar-days"></i>' . substr($data[$i]["news_date"], 0, 10);
+
+                                // echo '            August 13, 2023';
+                                echo '        </div>';
+                                echo '    </div>';
+                                echo '    <div class="control-btn">';
+                                echo '        <button id = "edit_news' . $i . '" onclick="edit()" class="edit">Edit</button>';
+                                echo '        <button id = "delete_news' . $i . '" onclick="delete_news(' . $data[$i]['news_id'] . ')" class="delete">Delete</button>';
+                                echo '    </div>';
+                                // echo '<input type="hidden" value="' . $data[$i]['news_id'] . '" style="width:30px; display:none;"';
+                                echo '</div>';
+
+                            }
+                        } else {
+                            echo "<h1 style='color: orange; font-size: 1.6rem; font-style: italic'>No News</h1><br><hr>";
+                        }
+                        ?>
+
+
+
+
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-text">
+            &copy;Copyright 2023, MinT
+        </div>
+    </footer>
+    <!-- <script>
+        function updateActiveLink(param) {
+            const main_page = document.getElementById("main");
+            let page = '\<
+            ?php include("cms-pages/'+param+'.php"); 
+            '?>';
+            // alert(`page is ${param}`);
+            main_page.innerHTML = page;
+        }
+    </script> -->
+</body>
+
+</html>

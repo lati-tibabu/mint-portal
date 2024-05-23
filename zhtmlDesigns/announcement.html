@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Announcements</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/announcement_style.css">
+</head>
+
+<body>
+    <script src="https://kit.fontawesome.com/cfee536f6f.js" crossorigin="anonymous"></script>
+
+    <div id="placeHolderHeader"></div>
+    <script src="js/header.js"></script>
+
+    <div class="page announcements-page">
+        <div class="page_name announcement-page-title">
+            <i class="fa-solid fa-bullhorn"></i>Announcements
+        </div>
+        <div class="announcements_content">
+
+            <div class="latest announcement-category">
+                <div class="announcement-type">
+                    <p>Latest Announcements</p>
+                </div>
+                <div class="announcement latest-announcements-content">
+
+                    <div class="latest-announcement announcement-detail">
+                        <div class="latest-announcement announcement-title">
+                            AI-powered Chatbot Enhances Customer Support Experience
+                        </div>
+                        <div class="latest-announcement announcement-date">
+                            August 3, 2023
+                        </div>
+                        <div class="latest-announcement announcement-description">
+                            A cutting-edge AI-powered chatbot has been integrated into our customer support system,
+                            providing real-time assistance to customers and significantly improving response times. With
+                            natural language processing capabilities, the chatbot offers personalized solutions,
+                            ensuring a seamless customer experience.
+                        </div>
+                    </div>
+
+                    <div class="latest-announcement announcement-detail">
+                        <div class="latest-announcement announcement-title">
+                            AI-powered Chatbot Enhances Customer Support Experience
+                        </div>
+                        <div class="latest-announcement announcement-date">
+                            August 3, 2023
+                        </div>
+                        <div class="latest-announcement announcement-description">
+                            A cutting-edge AI-powered chatbot has been integrated into our customer support system,
+                            providing real-time assistance to customers and significantly improving response times. With
+                            natural language processing capabilities, the chatbot offers personalized solutions,
+                            ensuring a seamless customer experience.
+                        </div>
+                    </div>
+
+                    <div class="latest-announcement announcement-detail">
+                        <div class="latest-announcement announcement-title">
+                            AI-powered Chatbot Enhances Customer Support Experience
+                        </div>
+                        <div class="latest-announcement announcement-date">
+                            August 3, 2023
+                        </div>
+                        <div class="latest-announcement announcement-description">
+                            A cutting-edge AI-powered chatbot has been integrated into our customer support system,
+                            providing real-time assistance to customers and significantly improving response times. With
+                            natural language processing capabilities, the chatbot offers personalized solutions,
+                            ensuring a seamless customer experience.
+                        </div>
+                    </div>
+
+                    <div class="latest-announcement announcement-detail">
+                        <div class="latest-announcement announcement-title">
+                            AI-powered Chatbot Enhances Customer Support Experience
+                        </div>
+                        <div class="latest-announcement announcement-date">
+                            August 3, 2023
+                        </div>
+                        <div class="latest-announcement announcement-description">
+                            A cutting-edge AI-powered chatbot has been integrated into our customer support system,
+                            providing real-time assistance to customers and significantly improving response times. With
+                            natural language processing capabilities, the chatbot offers personalized solutions,
+                            ensuring a seamless customer experience.
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="see-all-announcements">
+                <button onclick="see_all_announcements()" id="see_all_announcements">See All Announcements</button>
+            </div>
+
+            <div class="all announcement-category" id="all-announcement">
+                <div class="announcement-type">
+                    <p>All Announcements</p>
+                </div>
+                <div class="announcement all-announcements-content">
+
+                    <div class="all-announcement announcement-detail">
+                        <div class="all-announcement announcement-title">
+                            Lorem ipsum dolor sit amet consectetur,
+                        </div>
+                        <div class="all-announcement announcement-date">
+                            August 3, 2023
+                        </div>
+                        <div class="all-announcement announcement-description">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id adipisci vero similique dolorem
+                            eaque! Quaerat iste unde minima doloremque ipsam quidem ab omnis, harum veritatis?
+                            Repudiandae voluptatibus expedita delectus animi.
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    
+    <div id="footerPlaceholder"></div>
+    <script src="js/footer.js"></script>
+    
+    <script src="js/behavior.js"></script>
+
+
+    <script>
+
+        let announcement_shown = 0;
+
+
+        function see_all_announcements() {
+
+            const all_announcements = document.getElementById("all-announcement");
+            var see_all_announcements_btn = document.getElementById("see_all_announcements");
+
+            if (announcement_shown === 0) {
+                all_announcements.style.display = "flex";
+                see_all_announcements_btn.innerHTML = "Hide All Announcements";
+                announcement_shown = 1
+            } else{
+                all_announcements.style.display = "none";
+                see_all_announcements_btn.innerHTML = "See All Announcements";
+                announcement_shown = 0
+            }
+        }
+    </script>
+</body>
+
+</html>

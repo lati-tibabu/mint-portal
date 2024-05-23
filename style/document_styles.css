@@ -1,0 +1,109 @@
+.document-research {
+    /* background-color: aquamarine; */
+    padding-top: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 90%;
+    min-height: 50vh;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(128, 128, 128, 0.366);
+    margin-bottom: 30px;
+}
+
+.container-title {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    /* background-color: rgb(77, 77, 77); */
+    background-color: #e6953cff;
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.document-lists {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.document-card {
+    width: 19%;
+    min-width: 130px;
+    min-width: 200px;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 0 8px 0 rgba(128, 128, 128, 0.285);
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    border-bottom: 13px solid rgb(255, 255, 255);
+    transition: 400ms;
+}
+
+.document-card:hover {
+    background-color: rgb(244, 244, 244);
+    transform: translateY(-20px);
+    cursor: grab;
+}
+
+.document-card:active {
+    cursor: grabbing;
+}
+
+.fa-file-pdf {
+    font-size: 3rem;
+    color: rgb(255, 0, 0);
+    margin-bottom: 10px;
+}
+
+.document-name {
+    font-weight: bold;
+    border-bottom: 1px solid black;
+    user-select: none;
+    /* text-align: center; */
+}
+
+.document-description {
+    font-size: 0.8rem;
+    user-select: none;
+    min-height: 100px;
+    /* background-color: aquamarine; */
+}
+
+.download-button button {
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #124a5eff;
+    color: white;
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+
+.download-button button:hover {
+    box-shadow: 0 0 10px 0 rgba(128, 128, 128, 0.512);
+}
+
+@media screen and (max-width: 760px) {
+    .document-card {
+        width: 90%;
+    }
+}

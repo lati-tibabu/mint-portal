@@ -1,0 +1,19 @@
+{
+  "extends": [
+    "development"
+  ],
+  "hints": {
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+          "backdrop-filter",
+          "height: fit-content",
+          "user-select",
+          "width: fit-content"
+        ]
+      }
+    ],
+    "button-type": "off"
+  }
+}

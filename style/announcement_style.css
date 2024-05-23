@@ -1,0 +1,120 @@
+:root {
+    --color1: rgba(255, 228, 196, 0.608);
+    --color2: rgb(138, 76, 0);
+}
+
+
+.announcement-page-title{
+    text-align: center;
+}
+
+.announcements-page{
+    background-color: rgba(181, 181, 181, 0.281);
+}
+
+.announcements_content{
+    /* background-color: rgb(214, 214, 214); */
+    /* background: url(""); */
+    padding: 5%;
+}
+
+.announcement-category{
+    border: 1px solid rgba(255, 255, 255, 0.466);
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    /* background-color: aliceblue; */
+}
+
+.announcement-type p{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 20px;
+}
+
+.announcement{
+    /* border: 1px solid black; */
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+
+.announcement-detail{
+    width: 30%;
+    /* background-color: rgba(230, 214, 171, 0.34); */
+    background-color: white;
+    height: 300px;
+    max-height: 300px;
+    overflow-y: scroll;
+    /* border: 1px solid black; */
+    margin: 5px;
+    padding: 15px;
+    border-radius: 10px;
+    &:hover{
+        transition: 0.4s;
+        transform: scale(1.02);
+        box-shadow: 0 0 10px 0 rgba(128, 128, 128, 0.486);
+    }
+}
+
+.announcement-title{
+    cursor: pointer;
+    font-weight: bold;
+    /* background-color: red; */
+    text-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.announcement-title:hover{
+    text-decoration: underline;
+}
+
+.announcement-date{
+    color: var(--color2)
+}
+
+.announcement-description{
+    font-size: 0.8rem;
+}
+
+.see-all-announcements{
+    display: flex;
+    justify-content: center;
+}
+
+.see-all-announcements button{
+    transition: 1s;
+    padding: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: beige;
+    border-radius: 5px
+}
+
+.all{
+    display: none;
+    flex-direction: column;
+}
+/* 
+.latest-announcements-content{
+    background-color: bisque;
+}
+
+.announcement-category{
+    background-color: blue;
+}
+
+.announcements-page{
+    background-color: brown;
+} */
+
+
+@media screen and (max-width: 760px) {
+    .announcement-detail{
+        width: 95%;
+    }
+}

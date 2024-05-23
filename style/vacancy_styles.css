@@ -1,0 +1,354 @@
+main {
+    padding-top: 30vh;
+}
+
+.vacancy-section {
+    background-color: white;
+    width: 100%;
+    min-height: 70vh;
+    margin: 1.5%;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 0 rgba(182, 182, 182, 0.567);
+}
+
+.main-title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    /* color: #e6953cff; */
+    /* color: white; */
+    font-weight: bold;
+    /* background-color: rgb(0, 0, 0); */
+    /* background-color: rgb(81, 81, 81); */
+    /* background-color:  #e6953cff; */
+    height: 64px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.vacancy-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    /* background-color: red; */
+    width: 30%;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    min-height: 300px;
+    box-shadow: 0 0 10px 0 rgba(147, 147, 147, 0.456);
+    /* background-color: #124; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card:hover {
+    background-color: rgb(248, 248, 248);
+    transition: 0.4s;
+    transform: scale(1.07);
+    /* z-index: 1000; */
+}
+
+.vacancy-card p,
+.vacancy-card li,
+.vacancy-form-page p {
+    font-family: 'Open Sans';
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}
+
+.vacancy-card ul {
+    /* margin-right: 20px; */
+    /* background-color: red; */
+    margin-left: 30px;
+}
+
+.vacancy-card span,
+.vacancy-form-page span {
+    font-weight: bold;
+}
+
+.apply-button button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+    background-color: #124a5eff;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    position: relative;
+    bottom: 0;
+    text-decoration: none;
+}
+
+.apply-button a button {
+    text-decoration: none;
+}
+
+.apply-button button:hover {
+    box-shadow: 0 0 5px 0 rgb(146, 146, 146);
+    /* border: 1px solid rgb(255, 255, 255); */
+}
+
+.card-big {
+    width: 70%;
+    /* background-color: rgb(255, 234, 138); */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 0 rgba(147, 147, 147, 0.456);
+}
+
+.detailed {
+    /* background-color: red; */
+    /* width: 100%; */
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.vacancy-form-page {
+    background-color: white;
+    min-height: 65vh;
+    width: 100%;
+    margin: 3%;
+    border-radius: 15px;
+    box-shadow: 0 0 15px 0 rgba(162, 162, 162, 0.734);
+}
+
+.application-form-title {
+    font-size: 1.4rem;
+}
+
+.vacancy-information {
+    /* background-color: red; */
+    margin: 0 15px 0 15px;
+    padding: 20px;
+    width: 90%;
+    min-width: 250px;
+
+}
+
+.application-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: azure; */
+    /* width: 20%; */
+}
+
+.form-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: red; */
+    /* width: 200px; */
+}
+
+.form-section button {
+    border: none;
+    padding: 10px;
+    width: 100%;
+    margin: 10px;
+    background-color: rgb(0, 89, 255);
+    color: white;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    cursor: pointer;
+
+    &:hover {
+        transition: 80ms;
+        box-shadow: 0 0 10px 0 rgba(128, 128, 128, 0.781);
+    }
+}
+
+.apply-section {
+    width: 100%;
+    /* min-width: 600px; */
+    min-height: 100px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(128, 128, 128, 0.326);
+    margin-bottom: 20px;
+}
+
+.form-section-title {
+    font-family: 'Open Sans';
+    /* background-color: red; */
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    padding: 15px;
+}
+
+label span {
+    font-size: 0.7rem;
+    color: rgb(63, 63, 63);
+    font-weight: normal;
+}
+
+.input-section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.input-section label {
+    font-family: 'Open Sans', Poppins;
+}
+
+.input-section div:not(.gender) {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.input-section label {
+    /* background-color: red; */
+    width: 100%;
+    padding-left: 40px;
+    margin-bottom: 10px;
+}
+
+.input-section input:not(input[type="radio"]) {
+    /* width: 90%; */
+    border: none;
+    /* background-color: beige; */
+    box-shadow: 0 0 10px 0 rgba(128, 128, 128, 0.326);
+    padding: 10px;
+    border-radius: 5px;
+    /* margin-bottom: 10px; */
+}
+
+.input-section select {
+    padding: 10px;
+    box-shadow: 0 0 10px 0 rgba(128, 128, 128, 0.326);
+    width: 90%;
+    float: left;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #124a5eff;
+    color: white;
+}
+
+.apply-section {
+    padding: 50px;
+}
+
+.input-section {
+    /* background-color: antiquewhite; */
+}
+
+.back-button {
+    /* margin: 0; */
+    /* background-color: transparent; */
+    /* background-color: #124a5eff; */
+    position: absolute;
+    right: 0;
+    /* transform: translatex(-10px);
+    transform: translatey(-10px); */
+    /* padding: 20px; */
+}
+
+.back-button button {
+    border: none;
+    padding: 0;
+    background-color: transparent;
+}
+
+.back-button a {
+    /* width: 40px; */
+    /* height: 40px; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    /* background-color: black; */
+    /* color: white; */
+    color: #124a5eff;
+    /* color: red; */
+    padding: 10px;
+    /* margin: 10px; */
+    border-radius: 50%;
+}
+
+.back-button i {
+    font-size: 2.4rem;
+}
+
+.days_left {
+    /* background-color: #124a5eff; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.days_left_place {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: red;
+    padding: 10px;
+}
+
+/* .back-button a:hover{
+    box-shadow: 0 0 10px 0 rgb(43, 43, 43);
+} */
+
+@media screen and (max-width: 760px) {
+    .back-button i {
+        font-size: 1.8rem;
+    }
+
+    .card {
+        width: 95%;
+    }
+
+    .apply-section {
+        padding: 1px;
+    }
+
+    .form-section {
+        /* background-color: red; */
+        width: 300px;
+    }
+
+    .form-section form {
+        /* border: 1px solid black; */
+        width: 100%;
+    }
+
+    .input-section {
+        /* border: 1px solid black; */
+        width: 90%;
+    }
+
+    .input-section div {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .vacancy-form-page {
+        border: 1px solid black;
+        width: 90%;
+        /* background-color: rebeccapurple; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-title {
+        background-color: transparent;
+        color: black;
+    }
+}

@@ -1,0 +1,5 @@
+RewriteEngine on
+
+RewriteRule ^home home.php [NC,L]
+
+RewriteRule ^job/([0-9]+)$ vacancy-application.php?job_id=$1 [NC,L]

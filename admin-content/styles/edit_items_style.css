@@ -1,0 +1,216 @@
+* {
+    font-family: Poppins, 'Open Sans', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background: url("/images/news1.jpg"); */
+}
+
+.container {
+    width: 60%;
+    min-width: 400px;
+    background-color: #124a5eff;
+    /* background-color: rgba(128, 128, 128, 0.21); */
+    border-radius: 20px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 30px 0 rgb(130, 130, 130);
+}
+
+.item-content {
+    border-radius: 0 0 10px 10px;
+    /* background-color: rgba(128, 128, 128, 0.21); */
+    background-color: white;
+    border-top: 2px solid #124a5eff;
+    width: 100%;
+    /* min-width: 500px; */
+    padding: 10px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-content img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.item-content form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+
+.item-content-detail {
+    /* background-color: rgb(255, 231, 205); */
+    /* background: url("/images/news1.jpg"),
+        linear-gradient(45deg, rgba(18, 74, 94, 0.456) 0%, rgba(230, 148, 60, 0.478) 50%); */
+    background-color: #124a5e10;
+    box-shadow: 0 0 5px 0 rgba(128, 128, 128, 0.444);
+    padding: 10px;
+    border-radius: 10px;
+    width: 90%;
+    min-width: 580px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.item-content-detail input,
+.item-content-detail textarea,
+.item-content-detail select {
+    padding: 10px;
+    width: 90%;
+    /* border: 2px solid rgba(0, 0, 0, 0.541); */
+    /* box-shadow: 0 0 10px 0 #212121a1; */
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+    background-color: white;
+}
+
+.item-content button {
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #124a5eff;
+    color: white;
+}
+
+
+.change-picture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.change-picture div {
+    display: flex;
+    flex-direction: row;
+}
+
+label {
+    /* color: white; */
+    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+    /* background-color: #124a5e3c; */
+    width: 90%;
+}
+
+.back_button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: absolute;
+    right: 18%;
+    top: 0px;
+    background-color: #e6953cff;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 400ms;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.fa-xmark {
+    font-size: 2rem;
+}
+
+.back_button * {
+    color: white;
+}
+
+.back_button a {
+    text-decoration: none;
+    font-size: large;
+}
+
+.item-category {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+}
+
+.resetToOriginal {
+    color: white;
+    background-color: #000000;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Toggle button for whether or not to update file */
+.toggle_section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#toggle_change {
+    padding: 0;
+    background-color: gray;
+    width: 70px;
+    height: 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: row;
+    transition: 0.5 ease;
+    /* background-color: #137497; */
+    /* align-items: end; */
+    justify-content: start;
+}
+
+#replace_section {
+    opacity: 0.4;
+}
+
+.toggle_button {
+    transition: 0.5 ease;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0 0 5px 0 black;
+}
+
+/* Toggle button for whether or not to update file */
+@media screen and (max-width: 760px) {
+    .container {
+        width: 95%;
+        min-width: 300px;
+        padding: 10px;
+    }
+
+    .item-category {
+        font-size: 1.7rem;
+        font-weight: bold;
+        color: white;
+    }
+
+    .item-content-detail {
+        min-width: 320px;
+    }
+
+    .back_button {
+        right: 5px;
+        top: 5px;
+    }
+}

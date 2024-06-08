@@ -340,7 +340,7 @@
 
         function detail_news(params) {
             // if (confirm("Are you sure you want to delete this application?")) {
-            window.location.href = 'news_detail?news_id=' + params;
+            window.location.href = 'news_detail.php?news_id=' + params;
             // }
         }
     </script>

@@ -41,7 +41,7 @@ if (isset($_POST['submit'])) {
 
         mysqli_stmt_close($stmt);
     } else {
-        // If the file upload fails, display an error
+        echo $destination."<br>";
         echo "Error: Can't move uploaded file";
     }
 

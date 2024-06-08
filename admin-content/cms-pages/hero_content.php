@@ -168,7 +168,8 @@
         }
 
         function edit(param) {
-            window.location.href = 'edit_items_events.php?event_id_no=' + param;
+            // window.location.href = 'edit_items_events.php?event_id_no=' + param;
+            alert("editing is not currently supported");
         }
     </script>
 </body>

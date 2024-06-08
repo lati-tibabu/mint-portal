@@ -14,12 +14,13 @@ $category = $_POST["news-category"];
 // if ($_FILES['image']['name']) {
 
 if ($upload_file == '1') {
-    $imageDirectory = __DIR__ . '\images\\';
+    // $imageDirectory = __DIR__ . '\images\\';
+    $imageDirectory = __DIR__ . '/images/';
     $imageFileName = uniqid() . '.' . pathinfo($_FILES['image']['name'])['extension'];
 
     $destination = $imageDirectory . $imageFileName;
 
-    echo $destination;
+    echo $destination."<br>";
 
     if (!move_uploaded_file($_FILES["image"]["tmp_name"], $destination)) {
 

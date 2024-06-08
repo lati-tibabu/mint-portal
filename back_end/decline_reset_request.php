@@ -114,7 +114,7 @@ if (mysqli_query($con, $deleteQuery)) {
         echo '        <div class="error-icon">&#10008;</div>';
         echo '        <h1>Request Declined</h1>';
         echo '        <p>Your request has been declined.</p>';
-        echo '        <a href="../user-management/dashboard" class="back-to-home">Back to Home</a>';
+        echo '        <a href="../user-management/dashboard.php" class="back-to-home">Back to Home</a>';
         echo '    </div>';
         echo '</body>';
         echo '</html>';

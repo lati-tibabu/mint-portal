@@ -14,8 +14,8 @@
     include("../mint-portal/back_end/config.php");
     // include("back_end/config.php");
 
-    $news_id = $_GET['news_id'];
-    // $news_id = 31;
+    // $news_id = $_GET['news_id'];
+    $news_id = 31;
 
     $query = "SELECT * FROM news where news_id = $news_id;";
 

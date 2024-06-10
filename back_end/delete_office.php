@@ -8,7 +8,7 @@ if (isset($_GET['office_id'])) {
     
     if (mysqli_query($con, $deleteQuery)) {
         // Deletion successful
-        header("Location: ../admin-content/cms-pages/office.php");
+        header("Location: ../admin-content/cms-pages/offices.php");
         exit();
     } else {
         // Deletion failed

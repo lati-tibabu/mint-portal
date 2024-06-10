@@ -34,7 +34,7 @@ $apply_image_filename = uniqid() . '.' . pathinfo($_FILES["apply-image"]["name"]
 
 
 // Move uploaded files to a designated folder (make sure the folder is writable)
-$upload_folder = __DIR__ . "\uploads\\";
+$upload_folder = __DIR__ . "/uploads/";
 
 move_uploaded_file($_FILES["resume-cv"]["tmp_name"], $upload_folder . $resume_cv_filename);
 move_uploaded_file($_FILES["cover-letter"]["tmp_name"], $upload_folder . $cover_letter_filename);
@@ -107,6 +107,9 @@ if ($result) {
     echo '<body>';
     echo '    <div class="container">';
     echo '        <h1>Application Submitted Successfully</h1>';
+    //echo ' <h2>'.$upload_folder . $resume_cv_filename.'</h2>';
+    //echo ' <h2>'.$upload_folder . $cover_letter_filename.'</h2>';
+    //echo ' <h2>'.$upload_folder . $apply_image_filename.'</h2>';
     echo '        <p class="message">Thank you for submitting your application.</p>';
     echo '        <div class="back-button">';
     echo '            <a href="#" onclick="history.back()">Back</a>';

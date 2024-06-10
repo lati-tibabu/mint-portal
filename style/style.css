@@ -8,7 +8,6 @@
     src: url("../fonts/OpenSans-Regular.ttf");
 }
 
-
 :root {
     --color1: rgba(255, 228, 196, 0.608);
     --color2: rgba(255, 194, 120, 0.711);
@@ -17,29 +16,30 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins';
+    /* font-family: 'Poppins'; */
+    font-family: 'Open Sans';
 }
 
 
-
 /*------------------------------------*/
+
 
 /* .page_nav {
     z-index: 999;
 } */
 
+
 /* styling the hero part */
+
 .hero {
     padding-top: 30vh;
     display: flex;
     flex-direction: row;
     /* background: url("../images/tech_bg2.jpg"); */
     /* background: url("https://img.freepik.com/free-photo/3d-render-low-poly-plexus-design-network-communications_1048-14542.jpg?w=826&t=st=1692597400~exp=1692598000~hmac=91b19eb6e1454cd18d37902f6820fac7375b55f791b1b5b24f3b73bd4c53e67f"); */
-    background: url("https://img.freepik.com/free-photo/3d-render-low-poly-plexus-design-network-communications_1048-14542.jpg?w=826&t=st=1692597400~exp=1692598000~hmac=91b19eb6e1454cd18d37902f6820fac7375b55f791b1b5b24f3b73bd4c53e67f"),
-        linear-gradient(45deg, #124a5eff 0%, #e6953cff 50%);
+    background: url("https://img.freepik.com/free-photo/3d-render-low-poly-plexus-design-network-communications_1048-14542.jpg?w=826&t=st=1692597400~exp=1692598000~hmac=91b19eb6e1454cd18d37902f6820fac7375b55f791b1b5b24f3b73bd4c53e67f"), linear-gradient(45deg, #124a5eff 0%, #e6953cff 50%);
     /* background: url("https://scontent.fadd1-1.fna.fbcdn.net/v/t39.30808-6/375582269_626499586337457_1095427446078261322_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5614bc&_nc_ohc=OlA2pwJI3mEAX_s779k&_nc_ht=scontent.fadd1-1.fna&oh=00_AfB1vdDa_rpw3xy87x4AsBkhir7dH9zxD563MX0LoX2YIQ&oe=65020E45"),
         linear-gradient(45deg, #124a5eff 0%, #e6953cff 50%); */
-
     background-blend-mode: darken;
     background-size: cover;
     background-attachment: fixed;
@@ -52,7 +52,9 @@
     /* position: relative; */
 }
 
+
 /* Styling for the outer circle */
+
 .outer-circle {
     margin: 50px;
     width: 100px;
@@ -76,7 +78,9 @@
     transition: 1s;
 }
 
+
 /* Styling for the inner circle */
+
 .inner-circle {
     width: 80%;
     height: 80%;
@@ -89,6 +93,7 @@
     font-weight: 900;
     color: white;
 }
+
 
 /* div .one {
     flex: 1;
@@ -130,24 +135,27 @@ div .three {
     flex: 1;
 } */
 
+
 /* .hero h1{
     margin: 50px;
     padding: 10px;
 } */
 
-/* styling the main part */
 
+/* styling the main part */
 
 main {
     display: flex;
     flex-direction: row;
     /* background: url("https://img.freepik.com/free-photo/3d-render-low-poly-plexus-design-network-communications_1048-14542.jpg?w=826&t=st=1692597400~exp=1692598000~hmac=91b19eb6e1454cd18d37902f6820fac7375b55f791b1b5b24f3b73bd4c53e67f"); */
     /* background-image: url("../images/background/data-server-racks-hub-room-with-big-data-computer-center-blue-interior-hosting-storage-hardware.jpg"); */
-    background: url("../images/tech_bg2"), gray;
+    /* background: url("/images/tech_bg2"), gray; */
+    background: url("/images/tech_bg2"), rgb(255, 255, 255);
     background-size: cover;
     background-repeat: no-repeat;
     /* background-color: red; */
 }
+
 
 /* Stylize the main part of the side */
 
@@ -165,7 +173,6 @@ main {
     flex-direction: column;
     position: sticky;
 }
-
 
 .title {
     margin: 5px;
@@ -198,7 +205,6 @@ main {
     /* width: fit-content; */
     background-color: #124a5eff;
     cursor: pointer;
-
     &:hover {
         background-color: rgb(20, 106, 138);
     }
@@ -264,6 +270,7 @@ main {
     text-decoration: underline;
 }
 
+
 /* div .title .small-logo {
     width: 80px;
 } */
@@ -271,10 +278,10 @@ main {
 
 /* end of Stylize the main part of the side */
 
+
 /* .side-main .title {
     flex: 1;
 } */
-
 
 
 /* Page styling */
@@ -283,9 +290,12 @@ main {
     padding-top: 30vh;
 }
 
+
 /* Page styling */
 
+
 /* Styling main part of the main part */
+
 .main2 {
     display: flex;
     flex-direction: column;
@@ -350,12 +360,19 @@ main {
     display: none;
 }
 
+
 /* .page{ */
+
+
 /* display: block; */
+
+
 /* } */
+
 #page1 {
     display: block;
 }
+
 
 /* .news .news-content, .pages{
     display: flex;
@@ -388,6 +405,7 @@ main {
     padding: 10px;
     margin: 10px;
 } */
+
 .news-part {
     /* display: inline-block; */
     /* margin: 30px; */
@@ -515,6 +533,7 @@ main {
     text-align: center;
 }
 
+
 /* Styling main part of the main part */
 
 
@@ -589,6 +608,7 @@ main {
     /* height: 20px; */
 }
 
+
 /* Styling detailed news page */
 
 
@@ -600,6 +620,7 @@ main {
     background: rgba(18, 74, 94, 0.274);
     height: 100vh;
 } */
+
 
 /* styling the footer part */
 
@@ -643,7 +664,6 @@ footer {
     /* flex: 10; */
     /* min-width: 20px; */
     width: 400px;
-
 }
 
 .copyright {
@@ -693,13 +713,13 @@ footer ul span:hover {
 .footer-nav li a {
     text-decoration: none;
     cursor: pointer;
-
 }
 
 .footer-nav li:hover {
     transition: 0.6s;
     text-decoration: underline;
 }
+
 
 /*----------------------------------------------------------
 Styling news_detail.html*/
@@ -722,7 +742,6 @@ Styling news_detail.html*/
     background: #e6953cff;
     color: white;
 }
-
 
 .newsDate {
     display: flex;
@@ -747,16 +766,21 @@ Styling news_detail.html*/
     cursor: pointer;
 }
 
+
 /*Styling news_detail.html
 ----------------------------------------------------------*/
 
+
 /* This style is used for news page changing */
+
 
 /* .news_page{
     display: none;
 } */
 
+
 /* This style is used for news page changing */
+
 
 /* Styling search bar */
 
@@ -795,8 +819,8 @@ Styling news_detail.html*/
     font-size: large;
 }
 
-/* Styling search bar */
 
+/* Styling search bar */
 
 
 /*Officials section*/
@@ -832,7 +856,6 @@ Styling news_detail.html*/
     font-size: 0.87rem;
 }
 
-
 .main2 h1 {
     text-align: center;
     margin-bottom: 20px;
@@ -840,6 +863,7 @@ Styling news_detail.html*/
 
 
 /*Officials section*/
+
 
 /*Styling about page*/
 
@@ -864,13 +888,13 @@ Styling news_detail.html*/
         left: 0;
         left: 0;
     }; */
-
 }
 
 .about::before {
     content: "";
     position: absolute;
 }
+
 
 /* .about_title,
 .event_title {
@@ -885,7 +909,6 @@ Styling news_detail.html*/
     font-weight: bolder;
     text-align: center;
 }
-
 
 .about_content {
     padding: 30px;
@@ -952,7 +975,6 @@ Styling news_detail.html*/
 .about_content_list ul li {
     margin-left: 30px;
     list-style: circle;
-
 }
 
 .about_content_list .bold {
@@ -963,6 +985,7 @@ body {
     width: 100vw;
     overflow-x: hidden;
 }
+
 
 /* Styling map address */
 
@@ -1001,7 +1024,9 @@ body {
     text-align: center;
 }
 
+
 /* Styling map address */
+
 
 /*Styling  page*/
 
@@ -1013,7 +1038,6 @@ body {
 
 
 /* history of ministry */
-
 
 .ministry-history {
     /* background-color: #124a5eff; */
@@ -1073,6 +1097,7 @@ body {
     margin-left: 20px;
 }
 
+
 /* history of ministry */
 
 .mission-vision-section .section-name {
@@ -1083,7 +1108,6 @@ body {
 
 
 /* featured events styling */
-
 
 .featured-events {
     /* width: 100%; */
@@ -1100,9 +1124,6 @@ body {
     flex-wrap: nowrap;
     overflow-x: scroll;
 }
-
-
-
 
 .featured-event-card {
     width: 38%;
@@ -1175,7 +1196,9 @@ body {
     font-size: large;
 }
 
+
 /* featured events styling */
+
 .homepage-main-section {
     /* border: 1px solid black; */
     width: 80vw;
@@ -1192,7 +1215,9 @@ body {
     color: white;
 }
 
+
 /* Apply styles to the button */
+
 .custom-button {
     background-color: #124e5a;
     color: white;
@@ -1205,7 +1230,9 @@ body {
     font-family: 'Open Sans';
 }
 
+
 /* Style the button on hover */
+
 .custom-button:hover {
     background-color: #0e3f49;
     /* Darker background color on hover */
@@ -1216,54 +1243,40 @@ body {
         width: 90vw;
         overflow-x: hidden;
     }
-
     .featured-events {
         /* background-color: #124a5e29; */
     }
-
     .featured-event-card {
         min-width: 300px;
         border: none;
     }
-
     .featured-event-image {}
-
     .featured-event-image img {}
-
     .featured-event-name {}
-
     .featured-event-name h3 {
         font-size: 1.1rem;
     }
-
     .featured-event-countdown {}
-
     .countdown-section {
         width: 15%;
         height: 50px;
     }
-
     .countdown-section span {
         font-size: 1.2rem;
     }
-
     .countdown-section-name {
         font-size: 0.7rem;
     }
-
     .history-content-text {
         /* width: fit-content; */
         transform: translateX(-50px);
         font-size: 0.8rem;
     }
-    
-
     .history-year {
         font-size: 0.8rem;
         transform: translateX(-110%);
         width: 50px;
     }
-
     .hero {
         /* background: url("../images/news5.jpg"); */
         /* background: url("https://img.freepik.com/free-photo/3d-render-low-poly-plexus-design-network-communications_1048-14542.jpg?w=826&t=st=1692597400~exp=1692598000~hmac=91b19eb6e1454cd18d37902f6820fac7375b55f791b1b5b24f3b73bd4c53e67f"),
@@ -1271,100 +1284,79 @@ body {
         background-blend-mode: soft-light;
         background-size: cover;
     }
-
     main {
         width: 100vw;
         flex-direction: column;
         background-color: #124a5e29;
     }
-
     .side-main {
         display: none;
     }
-
     .main2 {
         /* margin: 0; */
     }
-
     .about_content {
         flex-direction: column;
     }
-
     .content-detail {
         width: 90%;
     }
-
     .innovate .text {
         font-size: 3rem;
         margin-left: 30px;
         /* background-color: #124a5e29; */
     }
-
     .outer-circle {
         display: none;
     }
-
     footer {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-
     .footer-top {
         align-items: center;
         justify-content: center;
         padding-left: 100px;
     }
-
     .logo-name {
         display: none;
     }
-
     .news-part {
         transition: 0.3s;
         width: 90%;
     }
-
     .news-detail {
         height: 250px;
         /* width: 300px; */
         overflow-y: scroll;
-
         /* background-color: rebeccapurple; */
     }
-
     .detailed-headline {
         font-size: 1rem;
         text-align: start;
     }
-
     .news-photo-headline img {
         width: 70vw;
     }
-
     .detailed-news-content {
         flex-direction: column;
     }
-
     .detailed-news {
         margin: 5px;
         padding: 15px;
     }
-
     .news-photo-headline img {
         width: 100%;
     }
-
     .date-author * {
         font-size: small;
     }
-
     .map-address .location-address {
         font-size: 1rem;
         color: #e6953cff;
     }
-
     .featured-events {
         /* display: none; */
     }

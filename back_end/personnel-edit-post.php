@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $imageFileName = ""; // Initialize the image filename variable
 
 
-        $imageDirectory = __DIR__ . '\personnel_images\\'; // Adjust the path as needed
+        $imageDirectory = __DIR__ . '/personnel_images/'; // Adjust the path as needed
         $imageFileName = uniqid() . '.' . pathinfo($_FILES['image']['name'])['extension'];
 
         $destination = $imageDirectory . $imageFileName;

@@ -64,7 +64,6 @@ if (!move_uploaded_file($_FILES["image"]["tmp_name"], $destination)) {
 
     $query = "INSERT INTO news (news_headline, news_detail, news_category, news_view_count, news_like_count, news_date, news_image, sector_id) VALUES (?, ?, ?, ?, ?, NOW(), ?, ?)";
 
-    // Prepare and execute the statement
     $stmt = mysqli_prepare($con, $query);
     mysqli_stmt_bind_param($stmt, "sssiisi", $headline, $detail, $category, $news_view_count, $news_like_count, $imageFileName, $sector_id);
     $result = mysqli_stmt_execute($stmt);

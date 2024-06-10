@@ -74,9 +74,8 @@ if (mysqli_num_rows($result) > 0) {
                 </div>
             </div>
 
-            <li id="online-app" onclick="clicked('online-app')"><a class="nav-links" href="online-application.php">Online Application</a></li>
-            <li id="e-service" onclick="clicked('e-service')"><a class="nav-links" href="e-services.php">E-Services</a></li>
-
+           <!-- <li id="online-app" onclick="clicked('online-app')"><a class="nav-links" href="online-application.php">Online Application</a></li>
+            <li id="e-service" onclick="clicked('e-service')"><a class="nav-links" href="e-services.php">E-Services</a></li> -->
 
         </ul>
     </nav>

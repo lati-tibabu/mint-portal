@@ -8,23 +8,26 @@
     src: url("../fonts/OpenSans-Regular.ttf");
 }
 
-
 main {
     display: flex;
     background-color: aliceblue;
+    /* background-color: rgb(13, 137, 245); */
     /* width: 100%; */
     /* flex-direction: ; */
 }
 
 .container {
     /* background-color: rgb(185, 185, 185); */
+    /* width: 90%; */
     width: 50%;
+    /* width: fit-content; */
     min-width: 500px;
     border-radius: 10px;
     min-height: 50vh;
     padding: 20px;
     box-shadow: 0 0 50px 5px rgba(127, 127, 127, 0.146);
-    background-color: white;
+    /* background-color: white; */
+    background-color: rgb(255, 255, 255);
     overflow-x: hidden;
     /* padding-top: 30vh; */
     /* background: url("../../images/mint_bg1.jpg"); */
@@ -41,7 +44,6 @@ main {
     justify-content: center;
     /* background-color: aliceblue; */
 }
-
 
 .header .buttons {
     list-style: none;
@@ -159,7 +161,9 @@ main {
     cursor: pointer;
 }
 
+
 /*  */
+
 .image-input {
     color: rgb(255, 255, 255);
     font-weight: bold;
@@ -191,7 +195,6 @@ main {
     background-color: rgba(39, 39, 0, 0.361);
     border: none;
 }
-
 
 .manage-news {
     overflow-y: scroll;
@@ -296,6 +299,7 @@ main {
     align-items: center;
 }
 
+
 /* .applications{
     background-color: rgb(0, 0, 0);
 } */
@@ -322,7 +326,6 @@ main {
     padding: 10px;
     cursor: pointer;
     justify-content: space-between;
-
     &:hover {
         background-color: rgb(223, 223, 223);
     }
@@ -377,15 +380,16 @@ main {
     padding: 5px;
     border-radius: 5px;
 }
-.change_user_password .user-name{
+
+.change_user_password .user-name {
     /* background-color: #124a5eff; */
     margin-bottom: 5px;
     flex-direction: column;
 }
+
 .change_user_password input {
     width: 100%;
 }
-
 
 .save {
     background-color: rgb(0, 153, 255);
@@ -494,7 +498,6 @@ table * {
     font-family: 'Open Sans';
 }
 
-
 table tbody * {
     font-weight: normal;
 }
@@ -505,7 +508,9 @@ thead tr {
     height: 30px;
 }
 
+
 /* Vacancy application submissions */
+
 
 /* Submitted application styles */
 
@@ -578,11 +583,14 @@ thead tr {
     color: white;
 }
 
+
 /* #delete_application{
     background-color: red;
 } */
 
+
 /* Submitted application styles */
+
 .sector-choose {
     /* background-color: rebeccapurple; */
     display: flex;
@@ -607,29 +615,24 @@ thead tr {
         padding: 0;
         transform: translate(0);
     }
-
     html {
         width: 100%;
     }
-
     main {
         /* background-color: red; */
         margin: 0;
         padding-top: 20vh;
     }
-
     .container {
         max-width: 90%;
         /* background-color: #124a5eff; */
         border-radius: 10px;
-
         /* margin: 20px; */
         min-width: 330px;
         overflow: hidden;
         /* background-color: #124a5eff; */
         /* width: 400px; */
     }
-
     .main-news-page {
         display: flex;
         flex-direction: row;
@@ -637,11 +640,9 @@ thead tr {
         /* align-items: center; */
         /* background-color: #124a5eff; */
     }
-
     .buttons *:not(.buttons i) {
         font-size: 0.7rem;
     }
-
     .news-page {
         padding: 10px;
         /* border: 1px solid black; */
@@ -655,7 +656,6 @@ thead tr {
         /* margin: 10px; */
         border-radius: 10px;
     }
-
     .contents {
         /* background-color: rebeccapurple; */
         padding: 10px;
@@ -666,7 +666,6 @@ thead tr {
         align-items: center;
         gap: 10px;
     }
-
     .contents-count {
         display: flex;
         flex-direction: column;
@@ -678,12 +677,10 @@ thead tr {
         padding: 10px;
         cursor: pointer;
         justify-content: space-between;
-
         &:hover {
             background-color: rgb(223, 223, 223);
         }
     }
-
     /* form{
         background-color: aquamarine; */
     /* width: 90%; */
@@ -700,35 +697,28 @@ thead tr {
         border: none;
         border-radius: 10px;
     }
-
     .post-news select,
     .post-news textarea,
     .post-news input[type="file"] {
         width: 90%;
     }
-
     .news-list .news {
         /* background-color: #124a5eff; */
         flex-direction: column;
     }
-
     .news-image img {
         width: 100%;
     }
-
     .control-btn {
         justify-content: space-around;
     }
-
     .control-btn button {
         width: 45%;
     }
-
     .contents {
         flex-direction: column;
         /* background-color: #124a5eff; */
     }
-
     .contents-count {
         width: 90%;
     }
